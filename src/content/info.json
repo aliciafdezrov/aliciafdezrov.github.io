@@ -97,46 +97,59 @@
   "technicalSkills": [
     {
       "category": "Frontend",
-      "values": ["React", "Next.js", "React router", "Tanstack Query"],
+      "values": [
+        { "name": "React", "icon": "react" },
+        { "name": "Next.js", "icon": "nextjs" },
+        { "name": "React router", "icon": "react-router" },
+        { "name": "Tanstack Query", "icon": "tanstack-query" }
+      ],
       "description": ""
     },
     {
       "category": "Languages",
-      "values": ["Typescript", "JavaScript (ES6+)"],
+      "values": [
+        { "name": "Typescript", "icon": "typescript" },
+        { "name": "JavaScript (ES6+)", "icon": "javascript" }
+      ],
       "description": ""
     },
     {
       "category": "Styling/UI",
       "values": [
-        "CSS",
-        "SCSS",
-        "BEM",
-        "styled-components",
-        "responsive design"
+        { "name": "CSS", "icon": "css" },
+        { "name": "SCSS", "icon": "sass" },
+        { "name": "BEM", "icon": "" },
+        { "name": "styled-components", "icon": "styled-components" },
+        { "name": "responsive design", "icon": "" }
       ],
       "description": ""
     },
     {
       "category": "Testing",
       "values": [
-        "Unit (Jest, Vitest)",
-        "Component (Cypress)",
-        "End-to-End (Cypress, Playwright)"
+        { "name": "Unit (Jest, Vitest)", "icon": "jest" },
+        { "name": "Component (Cypress)", "icon": "cypress" },
+        { "name": "End-to-End (Cypress, Playwright)", "icon": "" }
       ],
       "description": ""
     },
     {
       "category": "Bundling",
-      "values": ["Webpack", "Vite", "Parcel", "Rspack"],
+      "values": [
+        { "name": "Webpack", "icon": "webpack" },
+        { "name": "Vite", "icon": "vite" },
+        { "name": "Parcel", "icon": "" },
+        { "name": "Rspack", "icon": "" }
+      ],
       "description": ""
     },
     {
       "category": "Other tools",
       "values": [
-        "Git",
-        "CI/CD pipelines",
-        "Figma",
-        "Micro-Frontend (Webpack Module Federation)"
+        { "name": "Git", "icon": "git" },
+        { "name": "CI/CD pipelines", "icon": "" },
+        { "name": "Figma", "icon": "figma" },
+        { "name": "Micro-Frontend (Webpack Module Federation)", "icon": "" }
       ],
       "description": ""
     }

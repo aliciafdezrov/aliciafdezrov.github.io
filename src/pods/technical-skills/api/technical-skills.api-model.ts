@@ -1,6 +1,11 @@
+export interface SkillValue {
+  name: string;
+  icon: string;
+}
+
 export interface TechnicalSkillsApiItem {
   category: string;
-  values: string[];
+  values: SkillValue[];
   description: string;
 }
 

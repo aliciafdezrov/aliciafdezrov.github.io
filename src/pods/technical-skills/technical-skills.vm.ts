@@ -1,6 +1,11 @@
+export interface Skill {
+  name: string;
+  icon: string;
+}
+
 export interface TechnicalSkillsItem {
   title: string;
-  skills: string[];
+  skills: Skill[];
   description: string;
 }
 

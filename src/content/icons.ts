@@ -19,9 +19,25 @@ import {
   PiImageDuotone,
 } from "react-icons/pi";
 
-import { SiJavascript, SiNextdotjs, SiFigma } from "react-icons/si";
+import {
+  SiJavascript,
+  SiNextdotjs,
+  SiFigma,
+  SiTypescript,
+  SiReactrouter,
+  SiReactquery,
+  SiCss3,
+  SiSass,
+  SiStyledcomponents,
+  SiJest,
+  SiVitest,
+  SiCypress,
+  SiWebpack,
+  SiVite,
+  SiGit,
+} from "react-icons/si";
 
-import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa6";
+import { FaGithub, FaLinkedin, FaInstagram, FaReact } from "react-icons/fa6";
 
 export const iconLibrary: Record<string, IconType> = {
   arrowUpRight: HiArrowUpRight,
@@ -43,6 +59,19 @@ export const iconLibrary: Record<string, IconType> = {
   nextjs: SiNextdotjs,
   figma: SiFigma,
   instagram: FaInstagram,
+  react: FaReact,
+  typescript: SiTypescript,
+  "react-router": SiReactrouter,
+  "tanstack-query": SiReactquery,
+  css: SiCss3,
+  sass: SiSass,
+  "styled-components": SiStyledcomponents,
+  jest: SiJest,
+  vitest: SiVitest,
+  cypress: SiCypress,
+  webpack: SiWebpack,
+  vite: SiVite,
+  git: SiGit,
 };
 
 export type IconLibrary = typeof iconLibrary;

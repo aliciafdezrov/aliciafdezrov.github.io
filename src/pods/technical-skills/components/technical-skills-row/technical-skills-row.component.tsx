@@ -20,7 +20,7 @@ export const TechnicalSkillsRowComponent = async (
       )}
       <div className={styles.tagsContainer}>
         {technicalSkillsRow.skills.map((skill, index) => (
-          <Tag key={index} label={skill} />
+          <Tag key={index} label={skill.name} icon={skill.icon} />
         ))}
       </div>
     </div>
