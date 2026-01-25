@@ -1,0 +1,70 @@
+.container {
+  display: flex;
+  flex-direction: column;
+
+  /*spacing-component*/
+  gap: 0.25rem;
+
+  width: 100%;
+}
+
+.title {
+  /*font mixin*/
+  font-weight: 600;
+  font-size: 1.33rem;
+  line-height: 1.75rem;
+
+  /*color var*/
+  color: #0a0a0a;
+
+  /*spacing-component*/
+  margin-bottom: 0.25rem;
+}
+
+.description {
+  /*font mixin*/
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+
+  /*color var*/
+  color: #757575;
+}
+
+.tagsContainer {
+  display: flex;
+  flex-wrap: wrap;
+
+  /*spacing-component*/
+  gap: 0.5rem;
+  /*spacing-component*/
+  padding-top: 0.5rem;
+}
+
+.tag {
+  display: flex;
+  align-items: center;
+
+  /*spacing-component*/
+  gap: 0.25rem;
+  padding: 0.25rem 0.75rem;
+
+  /*color var*/
+  background-color: #fff;
+
+  /*color var*/
+  color: #595959;
+
+  /*color var*/
+  border: 1px solid #9595954d;
+
+  /*border-radius*/
+  border-radius: 0.5rem;
+  user-select: none;
+}
+
+.tagLabel {
+  font-weight: 400;
+  font-size: 0.875rem;
+  color: #171717;
+}

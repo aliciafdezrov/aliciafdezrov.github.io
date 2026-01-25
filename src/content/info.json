@@ -93,5 +93,71 @@
         ]
       }
     ]
+  },
+  "technicalSkills": [
+    {
+      "category": "Frontend",
+      "values": ["React", "Next.js", "React router", "Tanstack Query"],
+      "description": ""
+    },
+    {
+      "category": "Languages",
+      "values": ["Typescript", "JavaScript (ES6+)"],
+      "description": ""
+    },
+    {
+      "category": "Styling/UI",
+      "values": [
+        "CSS",
+        "SCSS",
+        "BEM",
+        "styled-components",
+        "responsive design"
+      ],
+      "description": ""
+    },
+    {
+      "category": "Testing",
+      "values": [
+        "Unit (Jest, Vitest)",
+        "Component (Cypress)",
+        "End-to-End (Cypress, Playwright)"
+      ],
+      "description": ""
+    },
+    {
+      "category": "Bundling",
+      "values": ["Webpack", "Vite", "Parcel", "Rspack"],
+      "description": ""
+    },
+    {
+      "category": "Other tools",
+      "values": [
+        "Git",
+        "CI/CD pipelines",
+        "Figma",
+        "Micro-Frontend (Webpack Module Federation)"
+      ],
+      "description": ""
+    }
+  ],
+  "personalInfo": {
+    "name": "Alicia Fernández",
+    "role": "Senior Frontend Developer",
+    "description": " Senior Frontend Developer with 9+ years of experience building scalable, high-quality web applications using React, TypeScript, and Next.js. Skilled in unit, component, and end-to-end testing (Jest, Vitest, Cypress, Playwright) and modern frontend tooling (Webpack, Vite, Parcel, Rspack). Experienced in working closely with product, UX/UI, and backend teams to deliver solutions that are not only technically solid but genuinely meet user needs, ensuring an optimal user experience.",
+    "socialMedia": [
+      {
+        "media": "LinkedIn",
+        "link": ""
+      },
+      {
+        "media": "Email",
+        "link": ""
+      },
+      {
+        "media": "Github",
+        "link": ""
+      }
+    ]
   }
 }
