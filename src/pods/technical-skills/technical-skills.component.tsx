@@ -9,7 +9,7 @@ const TechnicalSkillsComponent = async () => {
   return (
     <>
       <h2 className={styles.title}>Technical skills</h2>
-      <div className={styles.container}>
+      <div className={styles.content}>
         {technicalSkills.categories.map((category) => (
           <TechnicalSkillsRowComponent key={category.title} technicalSkillsRow={category} />
         ))}

@@ -12,11 +12,14 @@
   text-wrap: balance;
 }
 
-.container {
+.content {
   display: flex;
   flex-direction: column;
-  /*spacing-component*/
+  /*spacing-component-l*/
   gap: 2.5rem;
   width: 100%;
   min-width: 0;
+
+  /*spacing-component-l*/
+  margin-bottom: 2.5rem;
 }
