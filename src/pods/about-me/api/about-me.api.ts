@@ -1,5 +1,8 @@
 import { getInfo } from "@/lib/read-file";
-import { AboutMeApiInfo, createInitialAboutMeApiInfo } from "./about-me.api-model";
+import {
+  AboutMeApiInfo,
+  createInitialAboutMeApiInfo,
+} from "./about-me.api-model";
 
 export const getAboutMeInfo = async (): Promise<AboutMeApiInfo> => {
   try {
