@@ -148,15 +148,18 @@
     "socialMedia": [
       {
         "media": "LinkedIn",
-        "link": ""
+        "link": "",
+        "icon": "linkedin"
       },
       {
         "media": "Email",
-        "link": ""
+        "link": "",
+        "icon": "email"
       },
       {
         "media": "Github",
-        "link": ""
+        "link": "",
+        "icon": "github"
       }
     ]
   }

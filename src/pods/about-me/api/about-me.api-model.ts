@@ -1,6 +1,7 @@
 export interface SocialMediaApi {
   media: string;
   link: string;
+  icon: string;
 }
 
 export interface AboutMeApiInfo {

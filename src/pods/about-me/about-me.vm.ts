@@ -1,6 +1,7 @@
 export interface SocialMedia {
   media: string;
   link: string;
+  icon: string;
 }
 
 export interface AboutMeInfo {

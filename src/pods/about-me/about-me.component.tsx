@@ -1,6 +1,8 @@
 import { Suspense } from "react";
 import { getAboutMe } from "./about-me.actions";
 import styles from "./about-me.module.css";
+import { iconLibrary } from "@/content/icons";
+import { Icon } from "@/components/icon/Icon.component";
 
 const AboutMeComponent = async () => {
   const aboutMe = await getAboutMe();
@@ -20,7 +22,7 @@ const AboutMeComponent = async () => {
               target="_blank"
               rel="noreferrer"
             >
-              {social.media}
+              <Icon iconName={social.icon} /> {social.media}
             </a>
           ))}
         </div>
