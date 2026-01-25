@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  position: relative;
+  width: 100%;
+
+  /* Move to gap var */
+  row-gap: 2.5rem;
+  column-gap: 2.5rem;
+
+  /* Move to var*/
+  margin-bottom: 2.5rem;
+}
+
+.title {
+  /*Font mixin heading*/
+  font-weight: 600;
+  font-size: 2.5rem;
+  line-height: 3rem;
+  letter-spacing: -0.02rem;
+
+  /*color-primary*/
+  color: #0a0a0a;
+
+  /*spacing-component*/
+  margin-bottom: 1.5rem;
+}
