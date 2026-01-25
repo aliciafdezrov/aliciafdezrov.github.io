@@ -40,31 +40,3 @@
   /*spacing-component*/
   padding-top: 0.5rem;
 }
-
-.tag {
-  display: flex;
-  align-items: center;
-
-  /*spacing-component*/
-  gap: 0.25rem;
-  padding: 0.25rem 0.75rem;
-
-  /*color var*/
-  background-color: #fff;
-
-  /*color var*/
-  color: #595959;
-
-  /*color var*/
-  border: 1px solid #9595954d;
-
-  /*border-radius*/
-  border-radius: 0.5rem;
-  user-select: none;
-}
-
-.tagLabel {
-  font-weight: 400;
-  font-size: 0.875rem;
-  color: #171717;
-}
