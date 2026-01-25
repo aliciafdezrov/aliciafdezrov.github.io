@@ -7,12 +7,17 @@ const EducationAndCertificationsComponent = async () => {
   const educationAndCertifications = await getEducationAndCertifications();
 
   return (
-    <div className={styles.container}>
+    <>
       <span className={styles.title}>Education & Certifications</span>
-      {educationAndCertifications.degrees.map((degree) => (
-        <EducationAndCertificationsRowComponent key={degree.date} educationAndCertificationsRow={degree} />
-      ))}
-    </div>
+      <div className={styles.content}>
+        {educationAndCertifications.degrees.map((degree) => (
+          <EducationAndCertificationsRowComponent
+            key={degree.date}
+            educationAndCertificationsRow={degree}
+          />
+        ))}
+      </div>
+    </>
   );
 };
 
