@@ -15,11 +15,14 @@
   justify-content: center;
   font-family: var(--font-geist-sans);
   background-color: var(--background);
+
+  padding: 2.5rem;
 }
 
 .main {
   display: flex;
   justify-content: center;
+  position: relative;
 }
 
 .content {
