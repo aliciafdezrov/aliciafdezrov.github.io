@@ -1,5 +1,5 @@
-import { Icon } from "@/components/icon/Icon.component";
 import styles from "./header.module.scss";
+import { ThemeToggle } from "../theme-toggle/theme-toggle.component";
 
 export const Header = (props: React.PropsWithChildren) => {
   const { children } = props;
@@ -7,9 +7,7 @@ export const Header = (props: React.PropsWithChildren) => {
     <header className={styles.container}>
       <span>Europe/Spain</span>
       <div className={styles.toolbar}>
-        <button aria-label="change mode">
-          <Icon iconName="lightMode" />
-        </button>
+        <ThemeToggle />
       </div>
     </header>
   );
