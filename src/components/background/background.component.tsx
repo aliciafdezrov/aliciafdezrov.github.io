@@ -1,4 +1,4 @@
-import styles from "./background.module.css";
+import styles from "./background.module.scss";
 
 interface BackgroundProps {
   dotSize?: string;

@@ -1,5 +1,5 @@
 import { iconLibrary } from "@/content/icons";
-import styles from "./tag.module.css";
+import styles from "./tag.module.scss";
 
 interface TagProps {
   label: string;

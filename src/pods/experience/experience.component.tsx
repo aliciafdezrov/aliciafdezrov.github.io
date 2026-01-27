@@ -1,6 +1,6 @@
 import { Suspense } from "react";
 import { getExperience } from "./experience.actions";
-import styles from "./experience.module.css";
+import styles from "./experience.module.scss";
 import { ExperienceRowComponent } from "./components/experience-row/experience-row.component";
 
 const ExperienceComponent = async () => {

@@ -1,6 +1,6 @@
 import { Tag } from "@/components/tag/tag.component";
 import { TechnicalSkillsItem } from "../../technical-skills.vm";
-import styles from "./technical-skills-row.module.css";
+import styles from "./technical-skills-row.module.scss";
 
 interface TechnicalSkillsRowProps {
   technicalSkillsRow: TechnicalSkillsItem;

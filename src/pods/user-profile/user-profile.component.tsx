@@ -1,5 +1,5 @@
 import Image from "next/image";
-import styles from "./user-profile.module.css";
+import styles from "./user-profile.module.scss";
 import photo2 from "@/content/avatars/photo2.webp";
 import { getAcademic } from "./user-profile.actions";
 import { Tag } from "@/components/tag/tag.component";

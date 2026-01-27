@@ -1,6 +1,6 @@
 import { Suspense } from "react";
 import { getAboutMe } from "./about-me.actions";
-import styles from "./about-me.module.css";
+import styles from "./about-me.module.scss";
 import { iconLibrary } from "@/content/icons";
 import { Icon } from "@/components/icon/Icon.component";
 

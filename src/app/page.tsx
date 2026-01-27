@@ -1,4 +1,4 @@
-import styles from "./page.module.css";
+import styles from "./page.module.scss";
 import { AboutMe } from "@/pods/about-me/about-me.component";
 import { Experience } from "@/pods/experience/experience.component";
 import { TechnicalSkills } from "@/pods/technical-skills/technical-skills.component";

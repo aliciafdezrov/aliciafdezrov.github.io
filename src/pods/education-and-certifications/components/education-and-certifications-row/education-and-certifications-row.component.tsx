@@ -1,5 +1,5 @@
 import { EducationAndCertificationsItem } from "../../education-and-certifications.vm";
-import styles from "./education-and-certifications-row.module.css";
+import styles from "./education-and-certifications-row.module.scss";
 
 interface EducationAndCertificationsRowProps {
   educationAndCertificationsRow: EducationAndCertificationsItem;

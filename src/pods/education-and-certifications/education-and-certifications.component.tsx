@@ -1,6 +1,6 @@
 import { Suspense } from "react";
 import { getEducationAndCertifications } from "./education-and-certifications.actions";
-import styles from "./education-and-certifications.module.css";
+import styles from "./education-and-certifications.module.scss";
 import { EducationAndCertificationsRowComponent } from "./components/education-and-certifications-row/education-and-certifications-row.component";
 
 const EducationAndCertificationsComponent = async () => {

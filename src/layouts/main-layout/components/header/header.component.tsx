@@ -1,5 +1,5 @@
 import { Icon } from "@/components/icon/Icon.component";
-import styles from "./header.module.css";
+import styles from "./header.module.scss";
 
 export const Header = (props: React.PropsWithChildren) => {
   const { children } = props;

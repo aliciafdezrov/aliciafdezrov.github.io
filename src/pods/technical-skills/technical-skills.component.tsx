@@ -1,6 +1,6 @@
 import { Suspense } from "react";
 import { getTechnicalSkills } from "./technical-skills.actions";
-import styles from "./technical-skills.module.css";
+import styles from "./technical-skills.module.scss";
 import { TechnicalSkillsRowComponent } from "./components/technical-skills-row/technical-skills-row.component";
 
 const TechnicalSkillsComponent = async () => {

@@ -1,5 +1,5 @@
 import { ExperienceItem } from "../../experience.vm";
-import styles from "./experience-row.module.css";
+import styles from "./experience-row.module.scss";
 
 interface ExperienceRowProps {
   experienceRow: ExperienceItem;
