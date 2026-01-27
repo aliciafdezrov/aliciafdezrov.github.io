@@ -1,11 +1,10 @@
 @import '@/styles/typography.scss';
+@import '@/styles/spacing.scss';
 
 .container {
   display: flex;
   flex-direction: column;
-
-  /*spacing-component*/
-  gap: 0.25rem;
+  gap: $spacing-component-xxs;
 
   width: 100%;
 }
@@ -16,8 +15,7 @@
   /*color var*/
   color: #0a0a0a;
 
-  /*spacing-component*/
-  margin-bottom: 0.25rem;
+  margin-bottom: $spacing-component-xxs;
 }
 
 .description {
@@ -30,9 +28,6 @@
 .tagsContainer {
   display: flex;
   flex-wrap: wrap;
-
-  /*spacing-component*/
-  gap: 0.5rem;
-  /*spacing-component*/
-  padding-top: 0.5rem;
+  gap: $spacing-component-xs;
+  padding-top: $spacing-component-xs;
 }

@@ -1,4 +1,5 @@
 @import '@/styles/typography.scss';
+@import '@/styles/spacing.scss';
 
 .container {
   display: flex;
@@ -6,13 +7,9 @@
   min-width: 0;
   position: relative;
   width: 100%;
-
-  /* Move to gap var */
-  row-gap: 2.5rem;
-  column-gap: 2.5rem;
-
-  /* Move to var*/
-  margin-bottom: 2.5rem;
+  row-gap: $spacing-component-xl;
+  column-gap: $spacing-component-xl;
+  margin-bottom: $spacing-component-xl;
 }
 
 .title {
@@ -21,6 +18,5 @@
   /*color-primary*/
   color: #0a0a0a;
 
-  /*spacing-component*/
-  margin-bottom: 1.5rem;
+  margin-bottom: $spacing-component-ml;
 }

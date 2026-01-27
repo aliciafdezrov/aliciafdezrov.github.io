@@ -1,9 +1,10 @@
 @import '@/styles/typography.scss';
+@import '@/styles/spacing.scss';
 
 .container {
   display: flex;
   position: relative;
-  margin-bottom: 2rem;
+  margin-bottom: $spacing-component-l;
   flex-direction: column;
   justify-content: center;
   min-width: 0;
@@ -31,8 +32,7 @@
 .description {
   @include body-l;
 
-  /*spacing-component*/
-  margin-bottom: 5rem;
+  margin-bottom: $spacing-component-xxl;
 
   width: 100%;
 }
@@ -40,27 +40,24 @@
 .socialLinks {
   display: flex;
   flex-wrap: wrap;
-  /*spacing-component*/
-  gap: 0.5rem;
+  gap: $spacing-component-xs;
 
-  /*spacing-component*/
-  padding-top: 1.25rem;
+  padding-top: $spacing-component-m;
 
-  /*spacing-component*/
-  padding-bottom: 0.5rem;
+  padding-bottom: $spacing-component-xs;
 
-  margin-bottom: 2rem;
+  margin-bottom: $spacing-component-l;
 }
 
 .socialLink {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 0.25rem;
+  gap: $spacing-component-xxs;
   height: 2rem;
   min-height: 2rem;
 
-  padding: 0.25rem 0.5rem;
+  padding: $spacing-component-xxs $spacing-component-xs;
   border: 1px solid #95959526;
 
   /*border radius*/
