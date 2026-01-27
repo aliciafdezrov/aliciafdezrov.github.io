@@ -1,3 +1,5 @@
+@import '@/styles/fonts.scss';
+
 .container {
   display: flex;
   flex-direction: column;
@@ -23,27 +25,18 @@
 }
 
 .title {
-  /*Create font mixins heading-l*/
-  font-weight: 600;
-  line-height: 1.75rem;
-  font-size: 1.33rem;
+  @include heading-l;
 }
 
 .date {
-  /*Create font mixins heading-xs*/
-  font-weight: 400;
-  line-height: 1.25rem;
-  font-size: 1rem;
+  @include body-s;
 
   /*color secondary*/
   color: #757575;
 }
 
 .subtitle {
-  /*Font mixin body-small*/
-  font-size: 0.875rem;
-  line-height: 1.125rem;
-  font-weight: 400;
+  @include body-xs;
 
   /*color blue*/
   color: #0279be;
@@ -61,8 +54,5 @@
 }
 
 .listItem {
-  /*Font mixin body-m*/
-  font-weight: 400;
-  line-height: 1.5rem;
-  font-size: 1rem;
+  @include body-m;
 }

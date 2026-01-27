@@ -1,3 +1,5 @@
+@import '@/styles/fonts.scss';
+
 .container {
   display: flex;
   flex-direction: column;
@@ -9,10 +11,7 @@
 }
 
 .title {
-  /*font mixin*/
-  font-weight: 600;
-  font-size: 1.33rem;
-  line-height: 1.75rem;
+  @include heading-l;
 
   /*color var*/
   color: #0a0a0a;
@@ -22,10 +21,7 @@
 }
 
 .description {
-  /*font mixin*/
-  font-weight: 400;
-  font-size: 1rem;
-  line-height: 1.5rem;
+  @include body-m;
 
   /*color var*/
   color: #757575;

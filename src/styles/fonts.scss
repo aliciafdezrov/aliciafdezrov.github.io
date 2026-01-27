@@ -1,0 +1,53 @@
+// Typography Mixins
+// ==================
+// These mixins centralize all font styling combinations used across the project
+
+@mixin heading-xxl {
+  font-weight: 600;
+  font-size: 5rem;
+  line-height: 5rem;
+  letter-spacing: -0.05em;
+}
+
+@mixin heading-xl {
+  font-weight: 600;
+  font-size: 2.5rem;
+  line-height: 3rem;
+  letter-spacing: -0.02rem;
+}
+
+@mixin heading-l {
+  font-weight: 600;
+  font-size: 1.33rem;
+  line-height: 1.75rem;
+}
+
+@mixin heading-m {
+  font-weight: 300;
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+
+@mixin body-l {
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+}
+
+@mixin body-m {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+@mixin body-s {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.25rem;
+}
+
+@mixin body-xs {
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+}
