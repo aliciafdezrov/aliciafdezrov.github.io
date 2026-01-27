@@ -4,7 +4,7 @@ interface IconProps {
   iconName: string;
 }
 
-export const Icon = async (props: IconProps) => {
+export const Icon = (props: IconProps) => {
   const { iconName } = props;
   const Icon = iconLibrary[iconName];
 

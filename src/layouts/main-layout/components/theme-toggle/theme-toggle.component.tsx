@@ -22,12 +22,12 @@ export function ThemeToggle() {
       aria-label="Toggle theme"
       type="button"
     >
-      {/* <span className={styles.lightIcon}>
+      <span className={styles.lightIcon}>
         <Icon iconName="lightMode" />
       </span>
       <span className={styles.darkIcon}>
         <Icon iconName="darkMode" />
-      </span> */}
+      </span>
     </button>
   );
 }
