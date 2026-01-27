@@ -38,6 +38,7 @@ import {
 } from "react-icons/si";
 
 import { FaGithub, FaLinkedin, FaInstagram, FaReact } from "react-icons/fa6";
+import { MdOutlineLightMode, MdOutlineNightlight } from "react-icons/md";
 
 export const iconLibrary: Record<string, IconType> = {
   arrowUpRight: HiArrowUpRight,
@@ -72,6 +73,8 @@ export const iconLibrary: Record<string, IconType> = {
   webpack: SiWebpack,
   vite: SiVite,
   git: SiGit,
+  lightMode: MdOutlineLightMode,
+  darkMode: MdOutlineNightlight,
 };
 
 export type IconLibrary = typeof iconLibrary;
