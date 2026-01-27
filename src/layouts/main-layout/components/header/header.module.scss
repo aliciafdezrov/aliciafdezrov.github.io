@@ -1,15 +1,22 @@
-@use '@/styles/spacing.scss' as spacing;
+@use "@/styles/spacing.scss" as spacing;
 
 .container {
-    display: flex;
-    justify-content: center;
-    position: sticky;
-    top: 0;
-    z-index: 9;
-
-    padding: spacing.$spacing-component-xs;
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 9;
+  padding: spacing.$spacing-component-xs;
 }
 
 .toolbar {
-    
+  padding: spacing.$spacing-component-xxs;
+  /**Border properties*/
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 1.5rem;
+
+  color: var(--color-background);
+
+  min-width: 0px;
 }

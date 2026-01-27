@@ -11,18 +11,20 @@
   --color-accent-hover: #0051cc;
   --color-muted: #666666;
   --color-muted-foreground: #999999;
+  --dots-color: #0279be;
 }
 
 [data-theme="dark"] {
   // Dark theme colors
   --color-background: #0a0a0a;
-  --color-foreground: #ededed;
+  --color-foreground: #e0e0e0;
   --color-background-secondary: #1a1a1a;
   --color-border: #2a2a2a;
   --color-accent: #0070f3;
   --color-accent-hover: #0051cc;
   --color-muted: #a0a0a0;
   --color-muted-foreground: #666666;
+  --dots-color: #094074;
 }
 
 // Legacy variables for backwards compatibility

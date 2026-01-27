@@ -8,7 +8,7 @@
   padding: spacing.$spacing-component-xxs spacing.$spacing-component-s;
 
   /*color var*/
-  background-color: #fff;
+  background-color: var(--color-background);
 
   /*color var*/
   color: #595959;
@@ -30,5 +30,5 @@
 .tagLabel {
   font-weight: 400;
   font-size: 0.875rem;
-  color: #171717;
+  color: var(--color-foreground);
 }

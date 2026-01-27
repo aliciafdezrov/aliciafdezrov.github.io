@@ -3,7 +3,6 @@
 
 .title {
   @include typography.heading-xl;
-  color: #0a0a0a;
   margin-bottom: spacing.$spacing-component-xl;
   text-wrap: balance;
 }

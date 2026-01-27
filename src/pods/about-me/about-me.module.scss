@@ -18,9 +18,6 @@
   text-wrap: balance;
 
   margin: 0;
-
-  /*color var*/
-  color: #0a0a0a;
 }
 
 .role {
@@ -35,6 +32,7 @@
   margin-bottom: spacing.$spacing-component-xxl;
 
   width: 100%;
+  text-wrap: pretty;
 }
 
 .socialLinks {
@@ -70,7 +68,6 @@
   text-decoration: none;
   font-size: 0.875rem;
   font-weight: 500;
-  color: #0a0a0a;
   transition: all 0.2s ease;
 }
 

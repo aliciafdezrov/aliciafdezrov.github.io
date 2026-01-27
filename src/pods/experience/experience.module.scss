@@ -14,9 +14,5 @@
 
 .title {
   @include typography.heading-xl;
-
-  /*color-primary*/
-  color: #0a0a0a;
-
   margin-bottom: spacing.$spacing-component-ml;
 }

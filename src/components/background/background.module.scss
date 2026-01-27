@@ -37,7 +37,7 @@
   opacity: 0.4;
 
   /* Create the dots pattern using repeating radial gradients */
-  background-image: radial-gradient(#0279be 1px, #0000 1px);
+  background-image: radial-gradient(var(--dots-color) 1px, #0000 1px);
   background-size: 0.125rem 0.125rem;
   background-position: 0 0;
 }
