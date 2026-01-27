@@ -1,16 +1,16 @@
-@import '@/styles/typography.scss';
-@import '@/styles/spacing.scss';
+@use '@/styles/typography.scss' as typography;
+@use '@/styles/spacing.scss' as spacing;
 
 .title {
-  @include heading-xl;
+  @include typography.heading-xl;
   color: #0a0a0a;
-  margin-bottom: $spacing-component-xl;
+  margin-bottom: spacing.$spacing-component-xl;
   text-wrap: balance;
 }
 
 .content {
   display: flex;
   flex-direction: column;
-  gap: $spacing-component-xl;
-  margin-bottom: $spacing-component-xl;
+  gap: spacing.$spacing-component-xl;
+  margin-bottom: spacing.$spacing-component-xl;
 }

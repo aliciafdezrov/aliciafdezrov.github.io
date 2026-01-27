@@ -1,25 +1,25 @@
-@import '@/styles/typography.scss';
-@import '@/styles/spacing.scss';
+@use '@/styles/typography.scss' as typography;
+@use '@/styles/spacing.scss' as spacing;
 
 .container {
   display: flex;
   flex-direction: column;
-  gap: $spacing-component-xxs;
+  gap: spacing.$spacing-component-xxs;
 
   width: 100%;
 }
 
 .title {
-  @include heading-l;
+  @include typography.heading-l;
 
   /*color var*/
   color: #0a0a0a;
 
-  margin-bottom: $spacing-component-xxs;
+  margin-bottom: spacing.$spacing-component-xxs;
 }
 
 .description {
-  @include body-m;
+  @include typography.body-m;
 
   /*color var*/
   color: #757575;
@@ -28,6 +28,6 @@
 .tagsContainer {
   display: flex;
   flex-wrap: wrap;
-  gap: $spacing-component-xs;
-  padding-top: $spacing-component-xs;
+  gap: spacing.$spacing-component-xs;
+  padding-top: spacing.$spacing-component-xs;
 }

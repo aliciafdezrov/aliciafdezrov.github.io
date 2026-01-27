@@ -1,4 +1,4 @@
-@import '@/styles/spacing.scss';
+@use '@/styles/spacing.scss' as spacing;
 
 .page {
   --background: #fafafa;
@@ -18,7 +18,7 @@
   font-family: var(--font-geist-sans);
   background-color: var(--background);
 
-  padding: $spacing-component-xl;
+  padding: spacing.$spacing-component-xl;
 }
 
 .main {

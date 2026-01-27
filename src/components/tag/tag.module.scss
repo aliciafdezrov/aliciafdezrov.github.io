@@ -1,11 +1,11 @@
-@import '@/styles/spacing.scss';
+@use '@/styles/spacing.scss' as spacing;
 
 .tag {
   display: flex;
   align-items: center;
 
-  gap: $spacing-component-xxs;
-  padding: $spacing-component-xxs $spacing-component-s;
+  gap: spacing.$spacing-component-xxs;
+  padding: spacing.$spacing-component-xxs spacing.$spacing-component-s;
 
   /*color var*/
   background-color: #fff;

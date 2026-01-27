@@ -1,5 +1,5 @@
-@import '@/styles/typography.scss';
-@import '@/styles/spacing.scss';
+@use '@/styles/typography.scss' as typography;
+@use '@/styles/spacing.scss' as spacing;
 
 .container {
   display: flex;
@@ -20,36 +20,36 @@
   min-width: 0;
   width: 100%;
   position: relative;
-  margin-bottom: $spacing-component-xxs;
+  margin-bottom: spacing.$spacing-component-xxs;
 }
 
 .title {
-  @include heading-l;
+  @include typography.heading-l;
 }
 
 .date {
-  @include body-s;
+  @include typography.body-s;
 
   /*color secondary*/
   color: #757575;
 }
 
 .subtitle {
-  @include body-xs;
+  @include typography.body-xs;
 
   /*color blue*/
   color: #0279be;
 
-  margin-bottom: $spacing-component-ml;
+  margin-bottom: spacing.$spacing-component-ml;
 }
 
 .list {
   display: flex;
   flex-direction: column;
   position: relative;
-  gap: $spacing-component-sm;
+  gap: spacing.$spacing-component-sm;
 }
 
 .listItem {
-  @include body-m;
+  @include typography.body-m;
 }

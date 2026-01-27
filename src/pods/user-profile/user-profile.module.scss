@@ -1,18 +1,18 @@
-@import '@/styles/spacing.scss';
+@use '@/styles/spacing.scss' as spacing;
 
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
   flex: 3;
-  gap: $spacing-component-ml;
+  gap: spacing.$spacing-component-ml;
   position: sticky;
   height: fit-content;
   min-width: 10rem;
   top: 4rem;
-  padding-bottom: $spacing-component-xxl;
-  padding-left: $spacing-component-xl;
-  padding-right: $spacing-component-xl;
+  padding-bottom: spacing.$spacing-component-xxl;
+  padding-left: spacing.$spacing-component-xl;
+  padding-right: spacing.$spacing-component-xl;
 }
 
 .avatar {
@@ -23,6 +23,6 @@
 .languagesContainer {
   display: flex;
   flex-wrap: wrap;
-  gap: $spacing-component-xs;
+  gap: spacing.$spacing-component-xs;
   justify-content: center;
 }
