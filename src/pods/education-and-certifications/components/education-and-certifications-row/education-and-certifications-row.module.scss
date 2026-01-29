@@ -30,15 +30,13 @@
 .date {
   @include typography.body-s;
 
-  /*color secondary*/
-  color: #757575;
+  color: var(--color-text-tertiary);
 }
 
 .subtitle {
   @include typography.body-xs;
 
-  /*color blue*/
-  color: #0279be;
+  color: var(--color-accent-blue);
 
   margin-bottom: spacing.$spacing-component-ml;
 }

@@ -8,14 +8,9 @@
   gap: spacing.$spacing-component-xxs;
   padding: spacing.$spacing-component-xxs spacing.$spacing-component-s;
 
-  /*color var*/
   background-color: var(--color-background);
-
-  /*color var*/
-  color: #595959;
-
-  /*color var*/
-  border: 1px solid #9595954d;
+  color: var(--color-text-tag);
+  border: 1px solid var(--color-border-tag);
 
   /*border-radius*/
   border-radius: 0.5rem;

@@ -3,7 +3,7 @@ import { Theme, THEME_COOKIE_NAME } from "@/core/theme";
 
 /**
  * Gets the current theme from cookies.
- * Falls back to "light" if no theme is set.
+ * Falls back to "dark" if no theme is set.
  */
 export async function getTheme(): Promise<Theme> {
   const cookieStore = await cookies();

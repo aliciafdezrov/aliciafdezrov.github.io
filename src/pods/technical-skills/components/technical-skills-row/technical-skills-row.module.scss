@@ -17,8 +17,7 @@
 .description {
   @include typography.body-m;
 
-  /*color var*/
-  color: #757575;
+  color: var(--color-text-tertiary);
 }
 
 .tagsContainer {

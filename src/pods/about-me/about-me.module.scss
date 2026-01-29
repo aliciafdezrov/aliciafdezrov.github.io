@@ -23,7 +23,7 @@
 .role {
   @include typography.heading-m;
 
-  color: #757575;
+  color: var(--color-text-tertiary);
 }
 
 .description {
@@ -57,22 +57,22 @@
   min-height: 2rem;
 
   padding: spacing.$spacing-component-xxs spacing.$spacing-component-xs;
-  border: 1px solid #95959526;
+  border: 1px solid var(--color-border-subtle);
 
   /*border radius*/
   border-radius: 1.25rem;
 
 
-  background-color: #0000;
-  box-shadow: inset 0 0 0 #0000;
+  background-color: var(--color-transparent);
+  box-shadow: inset 0 0 0 var(--color-transparent);
 
   text-decoration: none;
   transition: all 0.2s ease;
 }
 
 .socialLink:hover {
-  background-color: #95959526;
-  border-color: #95959526;
+  background-color: var(--color-border-subtle);
+  border-color: var(--color-border-subtle);
   transform: translateY(-1px);
 }
 
