@@ -48,6 +48,7 @@
 }
 
 .socialLink {
+  @include typography.body-xxs;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -66,8 +67,6 @@
   box-shadow: inset 0 0 0 #0000;
 
   text-decoration: none;
-  font-size: 0.875rem;
-  font-weight: 500;
   transition: all 0.2s ease;
 }
 
