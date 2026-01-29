@@ -8,6 +8,7 @@
   align-items: center;
   justify-content: center;
   transition: all 0.2s ease;
+  color: var(--color-text-primary);
 
   &:hover {
     background: var(--color-border);
