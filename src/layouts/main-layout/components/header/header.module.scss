@@ -1,8 +1,8 @@
 @use "@/styles/spacing.scss" as spacing;
 
 .container {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
   position: sticky;
   top: 0;
   z-index: 9;
@@ -18,5 +18,21 @@
 
   color: var(--color-background);
 
-  min-width: 0px;
+  min-width: 100%;
+  width: 0px;
+
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  color: var(--color-text-primary);
+}
+
+.divider {
+  height: 100%;
+  width: 1px;
+  max-width: 1px;
+  min-width: 1px;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-border-tag);
 }

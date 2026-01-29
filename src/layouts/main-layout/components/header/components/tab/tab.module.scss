@@ -1,0 +1,25 @@
+.tab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+
+  border-radius: 1.25rem;
+  cursor: pointer;
+  border: 1px solid transparent;
+  background: var(--color-background-secondary);
+  transition: all 0.2s ease-in-out;
+
+  height: 2rem;
+  min-height: 2rem;
+  padding: 0.25rem 0.5rem;
+
+  &:hover {
+    background: var(--color-border);
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+}

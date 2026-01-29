@@ -3,7 +3,7 @@
 import { toggleTheme } from "@/actions/theme.actions";
 import { useTransition } from "react";
 import styles from "./theme-toggle.module.scss";
-import { Icon } from "../../../../components/icon/Icon.component";
+import { Icon } from "../../../../../../components/icon/Icon.component";
 
 export function ThemeToggle() {
   const [isPending, startTransition] = useTransition();
