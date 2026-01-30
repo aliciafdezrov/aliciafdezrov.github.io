@@ -9,6 +9,7 @@
   --color-background-alt: #000000;
   --color-background-secondary: #1a1a1a;
   --color-foreground: #e0e0e0;
+  --color-neutral: #fff;
 
   // Text colors
   --color-text-primary: #ededed;
@@ -48,6 +49,7 @@
   --color-background-alt: #fafafa;
   --color-background-secondary: #f5f5f5;
   --color-foreground: #171717;
+  --color-neutral: #0a0a0a;
 
   // Text colors
   --color-text-primary: #000000;
@@ -77,10 +79,4 @@
   --color-muted-foreground: #999999;
   --color-transparent: #00000000;
   --color-dots: #0279be;
-}
-
-// Legacy variables for backwards compatibility
-:root {
-  --background: var(--color-background);
-  --foreground: var(--color-foreground);
 }
