@@ -3,7 +3,8 @@ import { useEffect, useState } from "react";
 import styles from "./transition-mask.module.scss";
 import { cn } from "@/lib/cn";
 
-export const TransitionMask = () => {
+export const TransitionMask = (props: React.PropsWithChildren) => {
+  const { children } = props;
   const [isHidden, setIsHidden] = useState(true);
 
   useEffect(() => {
@@ -14,5 +15,9 @@ export const TransitionMask = () => {
     return () => clearTimeout(timer);
   }, []);
 
-  return <div className={cn(styles.mask, isHidden && styles.maskHidden)} />;
+  return (
+     <div className={cn(styles.mask, isHidden && styles.maskHidden)}>
+      {children}
+    </div>
+  );
 };

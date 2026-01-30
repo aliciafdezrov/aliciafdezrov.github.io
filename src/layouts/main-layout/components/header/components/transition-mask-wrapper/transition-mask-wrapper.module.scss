@@ -1,0 +1,10 @@
+.typing {
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 2s steps(50, end), blink .1s step-end infinite alternate;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
