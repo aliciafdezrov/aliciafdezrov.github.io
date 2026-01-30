@@ -1,7 +1,6 @@
 .themeToggle {
-  background: var(--color-background-secondary);
-  border: 1px solid var(--color-border);
-  border-radius: 8px;
+  background: var(--color-transparent);
+  border: 1px solid var(--color-transparent);
   padding: 0.5rem;
   cursor: pointer;
   display: flex;
@@ -12,6 +11,7 @@
 
   &:hover {
     background: var(--color-border);
+    border-radius: 1.25rem;
   }
 
   &:disabled {

@@ -6,7 +6,7 @@ export const Header = (props: React.PropsWithChildren) => {
   const { children } = props;
   return (
     <header className={styles.container}>
-      <span>Europe/Spain</span>
+      <span className={styles.region}>Europe/Spain</span>
       <div className={styles.toolbar}>
         <Tab>patata</Tab>
         <Tab>patata</Tab>

@@ -1,4 +1,4 @@
-@use '@/styles/spacing.scss' as spacing;
+@use "@/styles/spacing.scss" as spacing;
 
 .page {
   --background: var(--color-background-alt);
@@ -16,13 +16,18 @@
   align-items: center;
   justify-content: center;
   font-family: var(--font-geist-sans);
-  padding: spacing.$spacing-component-xl;
+  padding: spacing.$spacing-component-ml;
+
+  @media (min-width: 1015px) {
+    padding: spacing.$spacing-component-xl;
+  }
 }
 
 .main {
   display: flex;
   justify-content: center;
   position: relative;
+  max-width: 64rem;
 }
 
 .content {
