@@ -21,13 +21,21 @@ export const TechnicalSkillsRowComponent = async (
         <h4 className={styles.title}>{technicalSkillsRow.title}</h4>
       </RevealMotion>
       {technicalSkillsRow.description && (
-        <RevealMotion delay={baseDelay + config.offsets.description} className={styles.description}>
+        <RevealMotion
+          delay={baseDelay + config.offsets.description}
+          className={styles.description}
+        >
           {technicalSkillsRow.description}
         </RevealMotion>
       )}
       <div className={styles.tagsContainer}>
-        {technicalSkillsRow.skills.map((skill, index) => (
-          <Tag key={index} label={skill.name} icon={skill.icon} />
+        {technicalSkillsRow.skills.map((skill) => (
+          <RevealMotion
+            key={skill.name}
+            delay={baseDelay + config.offsets.description}
+          >
+            <Tag label={skill.name} icon={skill.icon} />
+          </RevealMotion>
         ))}
       </div>
     </div>
