@@ -3,6 +3,7 @@ import { getAboutMe } from "./about-me.actions";
 import styles from "./about-me.module.scss";
 import { RevealMotion } from "@/components/reveal-motion/reveal-motion.component";
 import { PAGE_ANIMATION_DELAYS } from "@/core/animation-delays";
+import { SocialLink } from "@/components/social-link/social-link.component";
 
 export const AboutMe = () => {
   const aboutMe = getAboutMe();
@@ -22,16 +23,18 @@ export const AboutMe = () => {
         {aboutMe.socialMedia.length > 0 && (
           <div className={styles.socialLinks}>
             {aboutMe.socialMedia.map((social, index) => (
-              <RevealMotion key={index} delay={delays.socialLinks.base + index * delays.socialLinks.increment}>
-                <a
-                  key={index}
+              <RevealMotion
+                key={index}
+                delay={
+                  delays.socialLinks.base + index * delays.socialLinks.increment
+                }
+              >
+                <SocialLink
                   href={social.link}
                   className={styles.socialLink}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <Icon iconName={social.icon} /> {social.media}
-                </a>
+                  media={social.media}
+                  icon={social.icon}
+                />
               </RevealMotion>
             ))}
           </div>
