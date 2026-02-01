@@ -18,6 +18,7 @@
   @media (max-width: breakpoints.$breakpoint-md) {
     position: relative;
     top: auto;
+    padding: spacing.$spacing-component-xl;
   }
 }
 

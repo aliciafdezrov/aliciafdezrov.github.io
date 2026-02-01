@@ -1,3 +1,5 @@
+@use "@/styles/breakpoints.scss" as breakpoints;
+
 // Typography Mixins
 // ==================
 // These mixins centralize all font styling combinations used across the project
@@ -8,6 +10,11 @@
   line-height: 5rem;
   letter-spacing: -0.05em;
   font-family: var(--font-geist-sans);
+
+  @media (max-width: breakpoints.$breakpoint-md) {
+    line-height: 3rem;
+    font-size: 2.75rem;
+  }
 }
 
 @mixin heading-xl {
@@ -16,6 +23,11 @@
   line-height: 3rem;
   letter-spacing: -0.02em;
   font-family: var(--font-geist-sans);
+
+   @media (max-width: breakpoints.$breakpoint-md) {
+    line-height: 2.5rem;
+    font-size: 2rem;
+  }
 }
 
 @mixin heading-l {
@@ -23,6 +35,11 @@
   font-size: 1.33rem;
   line-height: 1.75rem;
   font-family: var(--font-geist-sans);
+
+   @media (max-width: breakpoints.$breakpoint-md) {
+    line-height: 1.5rem;
+    font-size: 1.25rem;
+  }
 }
 
 @mixin heading-m {
@@ -30,6 +47,11 @@
   font-size: 2rem;
   line-height: 2.5rem;
   font-family: var(--font-geist-sans);
+
+  @media (max-width: breakpoints.$breakpoint-md) {
+    line-height: 2rem;
+    font-size: 1.75rem;
+  }
 }
 
 @mixin body-l {
@@ -59,7 +81,6 @@
   line-height: 1.125rem;
   font-family: var(--font-geist-sans);
 }
-
 
 @mixin body-xxs {
   font-weight: 400;
