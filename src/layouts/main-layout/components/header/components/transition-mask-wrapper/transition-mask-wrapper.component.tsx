@@ -1,18 +1,40 @@
 "use client";
 import { motion } from "motion/react";
 
-export const TransitionMaskWrapper = (props: React.PropsWithChildren) => {
-  const { children } = props;
+interface TransitionMaskWrapperProps {
+  className?: string;
+  delay?: number;
+}
+
+export const TransitionMaskWrapper = (
+  props: React.PropsWithChildren<TransitionMaskWrapperProps>
+) => {
+  const { children, className = "", delay = 0 } = props;
   return (
-    <motion.div
-      initial={{ x: -10, opacity: 0, clipPath: "inset(0 100% 0 0)" }}
-      animate={{ x: 0, opacity: 1, clipPath: "inset(0 0% 0 0)" }}
-      transition={{ duration: 0.6, ease: "easeOut" }}
+    <motion.span
+      initial={{
+        x: -10,
+        opacity: 0,
+        filter: "blur(1rem)",
+        maskPosition: "0 100%",
+      }}
+      animate={{
+        x: 0,
+        opacity: 1,
+        maskPosition: "0 0",
+        filter: "blur(0px)",
+      }}
+      transition={{
+        duration: 0.9,
+        ease: "easeInOut",
+        delay,
+      }}
       style={{ display: "inline-block" }}
       whileInView={{ x: 0, opacity: 1 }}
       viewport={{ once: true }}
+      className={className}
     >
       {children}
-    </motion.div> 
+    </motion.span>
   );
 };

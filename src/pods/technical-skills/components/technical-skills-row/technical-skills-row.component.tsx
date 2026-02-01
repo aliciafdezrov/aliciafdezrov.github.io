@@ -1,7 +1,7 @@
 import { Tag } from "@/components/tag/tag.component";
 import { TechnicalSkillsItem } from "../../technical-skills.vm";
 import styles from "./technical-skills-row.module.scss";
-
+import { RevealMotion } from "@/components/reveal-motion/reveal-motion.component";
 interface TechnicalSkillsRowProps {
   technicalSkillsRow: TechnicalSkillsItem;
 }
@@ -12,11 +12,13 @@ export const TechnicalSkillsRowComponent = async (
 
   return (
     <div className={styles.container}>
-      <span className={styles.title}>{technicalSkillsRow.title}</span>
+      <RevealMotion>
+        <h4 className={styles.title}>{technicalSkillsRow.title}</h4>
+      </RevealMotion>
       {technicalSkillsRow.description && (
-        <span className={styles.description}>
+        <RevealMotion className={styles.description}>
           {technicalSkillsRow.description}
-        </span>
+        </RevealMotion>
       )}
       <div className={styles.tagsContainer}>
         {technicalSkillsRow.skills.map((skill, index) => (

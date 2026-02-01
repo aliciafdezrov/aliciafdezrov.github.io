@@ -1,4 +1,4 @@
-import { TransitionMaskWrapper } from "@/layouts/main-layout/components/header/components/transition-mask-wrapper/transition-mask-wrapper.component";
+import { RevealMotion } from "@/components/reveal-motion/reveal-motion.component";
 import { ExperienceItem } from "../../experience.vm";
 import styles from "./experience-row.module.scss";
 
@@ -11,22 +11,22 @@ export const ExperienceRowComponent = async (props: ExperienceRowProps) => {
   return (
     <div className={styles.container}>
       <div className={styles.header}>
-        <TransitionMaskWrapper>
-          <span className={styles.title}>{experienceRow.title}</span>
-        </TransitionMaskWrapper>
-        <TransitionMaskWrapper>
-          <span className={styles.date}>{experienceRow.date}</span>
-        </TransitionMaskWrapper>
+        <RevealMotion>
+          <h4 className={styles.title}>{experienceRow.title}</h4>
+        </RevealMotion>
+        <RevealMotion className={styles.date}>
+          {experienceRow.date}
+        </RevealMotion>
       </div>
-      <TransitionMaskWrapper>
-        <span className={styles.subtitle}>{experienceRow.subtitle}</span>
-      </TransitionMaskWrapper>
+      <RevealMotion className={styles.subtitle}>
+        {experienceRow.subtitle}
+      </RevealMotion>
 
       <ul className={styles.list}>
         {experienceRow.keyContributions.map((contribution, index) => (
-          <TransitionMaskWrapper key={index}>
+          <RevealMotion key={index}>
             <li className={styles.listItem}>{contribution}</li>
-          </TransitionMaskWrapper>
+          </RevealMotion>
         ))}
       </ul>
     </div>

@@ -1,17 +1,16 @@
-import { Suspense } from "react";
 import { getEducationAndCertifications } from "./education-and-certifications.actions";
 import styles from "./education-and-certifications.module.scss";
 import { EducationAndCertificationsRowComponent } from "./components/education-and-certifications-row/education-and-certifications-row.component";
-import { TransitionMaskWrapper } from "@/layouts/main-layout/components/header/components/transition-mask-wrapper/transition-mask-wrapper.component";
+import { RevealMotion } from "@/components/reveal-motion/reveal-motion.component";
 
-const EducationAndCertificationsComponent = async () => {
+export const EducationAndCertifications = async () => {
   const educationAndCertifications = await getEducationAndCertifications();
 
   return (
     <>
-      <TransitionMaskWrapper>
-        <span className={styles.title}>Education & Certifications</span>
-      </TransitionMaskWrapper>
+      <RevealMotion>
+        <h3 className={styles.title}>Education & Certifications</h3>
+      </RevealMotion>
       <div className={styles.content}>
         {educationAndCertifications.degrees.map((degree) => (
           <EducationAndCertificationsRowComponent
@@ -21,13 +20,5 @@ const EducationAndCertificationsComponent = async () => {
         ))}
       </div>
     </>
-  );
-};
-
-export const EducationAndCertifications = async () => {
-  return (
-    <Suspense fallback={"Loading..."}>
-      <EducationAndCertificationsComponent />
-    </Suspense>
   );
 };

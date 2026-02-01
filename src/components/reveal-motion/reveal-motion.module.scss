@@ -1,0 +1,8 @@
+.revealMotion {
+  mask-size: 400% 100%;
+  mask-image: linear-gradient(to right, black 0%, black 25%, transparent 50%);
+}
+
+.revealedNoMask {
+  // No mask styles needed - Motion handles the final state
+}

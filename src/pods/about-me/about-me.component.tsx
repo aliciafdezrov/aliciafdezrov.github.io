@@ -1,54 +1,46 @@
-import { Suspense } from "react";
+import { Icon } from "@/components/icon/Icon.component";
 import { getAboutMe } from "./about-me.actions";
 import styles from "./about-me.module.scss";
-import { iconLibrary } from "@/content/icons";
-import { Icon } from "@/components/icon/Icon.component";
-import { TransitionMaskWrapper } from "@/layouts/main-layout/components/header/components/transition-mask-wrapper/transition-mask-wrapper.component";
+import { RevealMotion } from "@/components/reveal-motion/reveal-motion.component";
 
-const AboutMeComponent = async () => {
+export const AboutMe = async () => {
   const aboutMe = await getAboutMe();
 
   return (
-    <div className={styles.container}>
-      <TransitionMaskWrapper>
-        <h1 className={styles.title}>{aboutMe.name}</h1>
-      </TransitionMaskWrapper>
+    <>
+      <div className={styles.container}>
+        <RevealMotion translateY="0.25rem">
+          <h1 className={styles.title}>{aboutMe.name}</h1>
+        </RevealMotion>
 
-      <TransitionMaskWrapper>
-        <span className={styles.role}>{aboutMe.role}</span>
-      </TransitionMaskWrapper>
+        <RevealMotion translateY="0.25rem" delay={0.2}>
+          <h2 className={styles.role}>{aboutMe.role}</h2>
+        </RevealMotion>
 
-      {aboutMe.socialMedia.length > 0 && (
-        <div className={styles.socialLinks}>
-          {aboutMe.socialMedia.map((social, index) => (
-            <TransitionMaskWrapper key={index}>
-              <a
-                key={index}
-                href={social.link}
-                className={styles.socialLink}
-                target="_blank"
-                rel="noreferrer"
-              >
-                <Icon iconName={social.icon} /> {social.media}
-              </a>
-            </TransitionMaskWrapper>
-          ))}
-        </div>
-      )}
+        {aboutMe.socialMedia.length > 0 && (
+          <div className={styles.socialLinks}>
+            {aboutMe.socialMedia.map((social, index) => (
+              <RevealMotion key={index} delay={0.2}>
+                <a
+                  key={index}
+                  href={social.link}
+                  className={styles.socialLink}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <Icon iconName={social.icon} /> {social.media}
+                </a>
+              </RevealMotion>
+            ))}
+          </div>
+        )}
 
-      {aboutMe.description && (
-        <TransitionMaskWrapper>
-          <div className={styles.description}>{aboutMe.description}</div>
-        </TransitionMaskWrapper>
-      )}
-    </div>
-  );
-};
-
-export const AboutMe = async () => {
-  return (
-    <Suspense fallback={"Loading..."}>
-      <AboutMeComponent />
-    </Suspense>
+        {aboutMe.description && (
+          <RevealMotion translateY="0.5rem" delay={0.4}>
+            <div className={styles.description}>{aboutMe.description}</div>
+          </RevealMotion>
+        )}
+      </div>
+    </>
   );
 };
