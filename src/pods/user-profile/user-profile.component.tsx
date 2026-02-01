@@ -4,8 +4,8 @@ import photo2 from "@/content/avatars/photo2.webp";
 import { getAcademic } from "./user-profile.actions";
 import { Tag } from "@/components/tag/tag.component";
 
-export const UserProfile = async () => {
-  const academic = await getAcademic();
+export const UserProfile = () => {
+  const academic = getAcademic();
 
   return (
     <div className={styles.container}>

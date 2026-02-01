@@ -1,10 +1,9 @@
-import { getInfo } from "@/lib/read-file";
 import { ExperienceApiInfo } from "./experience.api-model";
+import { info } from "@/content/info";
 
-export const getExperienceInfo = async (): Promise<ExperienceApiInfo> => {
+export const getExperienceInfo = (): ExperienceApiInfo => {
   try {
-    const json = await getInfo();
-    return json.experience;
+    return info.experience;
   } catch (exception) {
     throw exception;
   }

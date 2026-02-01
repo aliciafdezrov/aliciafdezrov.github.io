@@ -1,10 +1,9 @@
-import { getInfo } from "@/lib/read-file";
 import { TechnicalSkillsApiInfo, createInitialTechnicalSkillsApiInfo } from "./technical-skills.api-model";
+import { info } from "@/content/info";
 
-export const getTechnicalSkillsInfo = async (): Promise<TechnicalSkillsApiInfo> => {
+export const getTechnicalSkillsInfo = (): TechnicalSkillsApiInfo => {
   try {
-    const json = await getInfo();
-    return json.technicalSkills || createInitialTechnicalSkillsApiInfo();
+    return info.technicalSkills || createInitialTechnicalSkillsApiInfo();
   } catch (exception) {
     throw exception;
   }

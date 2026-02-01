@@ -3,8 +3,8 @@ import { getAboutMe } from "./about-me.actions";
 import styles from "./about-me.module.scss";
 import { RevealMotion } from "@/components/reveal-motion/reveal-motion.component";
 
-export const AboutMe = async () => {
-  const aboutMe = await getAboutMe();
+export const AboutMe = () => {
+  const aboutMe = getAboutMe();
 
   return (
     <>

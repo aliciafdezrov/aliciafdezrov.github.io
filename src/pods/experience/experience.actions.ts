@@ -1,10 +1,10 @@
 import { createInitialExperienceInfo, ExperienceInfo } from "./experience.vm";
-import { getExperienceInfo } from "./api";
 import { mapApiExperienceToExperience } from "./experience.mapper";
+import { getExperienceInfo } from "./api/experience.api";
 
-export const getExperience = async (): Promise<ExperienceInfo> => {
+export const getExperience = (): ExperienceInfo => {
   try {
-    const apiExperience = await getExperienceInfo();
+    const apiExperience = getExperienceInfo();
     return mapApiExperienceToExperience(apiExperience);
   } catch {
     return createInitialExperienceInfo();

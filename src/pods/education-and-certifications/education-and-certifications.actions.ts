@@ -2,9 +2,9 @@ import { createInitialEducationAndCertificationsInfo, EducationAndCertifications
 import { mapApiEducationAndCertificationsToEducationAndCertifications } from "./education-and-certifications.mapper";
 import { getEducationAndCertificationsInfo } from "./api/education-and-certifications.api";
 
-export const getEducationAndCertifications = async (): Promise<EducationAndCertificationsInfo> => {
+export const getEducationAndCertifications = (): EducationAndCertificationsInfo => {
   try {
-    const apiEducationAndCertifications = await getEducationAndCertificationsInfo();
+    const apiEducationAndCertifications = getEducationAndCertificationsInfo();
     return mapApiEducationAndCertificationsToEducationAndCertifications(apiEducationAndCertifications);
   } catch {
     return createInitialEducationAndCertificationsInfo();

@@ -1,10 +1,9 @@
-import { getInfo } from "@/lib/read-file";
 import { EducationAndCertificationsApiInfo } from "./education-and-certifications.api-model";
+import { info } from "@/content/info";
 
-export const getEducationAndCertificationsInfo = async (): Promise<EducationAndCertificationsApiInfo> => {
+export const getEducationAndCertificationsInfo = (): EducationAndCertificationsApiInfo => {
   try {
-    const json = await getInfo();
-    return json.academic;
+    return info.academic;
   } catch (exception) {
     throw exception;
   }

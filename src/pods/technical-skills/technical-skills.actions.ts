@@ -2,9 +2,9 @@ import { createInitialTechnicalSkillsInfo, TechnicalSkillsInfo } from "./technic
 import { mapApiTechnicalSkillsToTechnicalSkills } from "./technical-skills.mapper";
 import { getTechnicalSkillsInfo } from "./api/technical-skills.api";
 
-export const getTechnicalSkills = async (): Promise<TechnicalSkillsInfo> => {
+export const getTechnicalSkills = (): TechnicalSkillsInfo => {
   try {
-    const apiTechnicalSkills = await getTechnicalSkillsInfo();
+    const apiTechnicalSkills = getTechnicalSkillsInfo();
     return mapApiTechnicalSkillsToTechnicalSkills(apiTechnicalSkills);
   } catch {
     return createInitialTechnicalSkillsInfo();

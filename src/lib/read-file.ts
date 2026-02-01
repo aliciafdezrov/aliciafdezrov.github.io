@@ -1,8 +1,5 @@
-import fs from "fs";
-import path from "path";
+import { info } from "@/content/info";
 
-export async function getInfo(): Promise<unknown> {
-  const filePath = path.join(process.cwd(), "src/content/info.json");
-  const fileContents = fs.readFileSync(filePath, "utf8");
-  return JSON.parse(fileContents);
+export async function getInfo() {
+  return info;
 }

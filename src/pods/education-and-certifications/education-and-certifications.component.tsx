@@ -3,8 +3,8 @@ import styles from "./education-and-certifications.module.scss";
 import { EducationAndCertificationsRowComponent } from "./components/education-and-certifications-row/education-and-certifications-row.component";
 import { RevealMotion } from "@/components/reveal-motion/reveal-motion.component";
 
-export const EducationAndCertifications = async () => {
-  const educationAndCertifications = await getEducationAndCertifications();
+export const EducationAndCertifications = () => {
+  const educationAndCertifications = getEducationAndCertifications();
 
   return (
     <>

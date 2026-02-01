@@ -3,8 +3,8 @@ import styles from "./experience.module.scss";
 import { ExperienceRowComponent } from "./components/experience-row/experience-row.component";
 import { RevealMotion } from "@/components/reveal-motion/reveal-motion.component";
 
-export const Experience = async () => {
-  const experience = await getExperience();
+export const Experience = () => {
+  const experience = getExperience();
 
   return (
     <div className={styles.container}>

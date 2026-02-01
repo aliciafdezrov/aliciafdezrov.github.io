@@ -3,8 +3,8 @@ import styles from "./technical-skills.module.scss";
 import { TechnicalSkillsRowComponent } from "./components/technical-skills-row/technical-skills-row.component";
 import { RevealMotion } from "@/components/reveal-motion/reveal-motion.component";
 
-export const TechnicalSkills = async () => {
-  const technicalSkills = await getTechnicalSkills();
+export const TechnicalSkills = () => {
+  const technicalSkills = getTechnicalSkills();
 
   return (
     <>

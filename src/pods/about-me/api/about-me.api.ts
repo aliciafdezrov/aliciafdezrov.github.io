@@ -1,14 +1,12 @@
-import { getInfo } from "@/lib/read-file";
 import {
   AboutMeApiInfo,
   createInitialAboutMeApiInfo,
 } from "./about-me.api-model";
+import { info } from "@/content/info";
 
-export const getAboutMeInfo = async (): Promise<AboutMeApiInfo> => {
+export const getAboutMeInfo = (): AboutMeApiInfo => {
   try {
-    const json = await getInfo();
-    const data = json as { personalInfo?: AboutMeApiInfo };
-    return data.personalInfo || createInitialAboutMeApiInfo();
+    return info.personalInfo || createInitialAboutMeApiInfo();
   } catch (exception) {
     throw exception;
   }
