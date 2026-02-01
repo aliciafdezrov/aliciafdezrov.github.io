@@ -39,6 +39,9 @@
   --color-muted-foreground: #666666;
   --color-transparent: #00000000;
   --dots-color: #094074;
+
+  //Icon colors
+  --color-icon: #e0e0e0;
 }
 
 [data-theme="light"] {
@@ -79,4 +82,7 @@
   --color-muted-foreground: #999999;
   --color-transparent: #00000000;
   --color-dots: #0279be;
+
+  //Icon colors
+  --color-icon: #595959;
 }
