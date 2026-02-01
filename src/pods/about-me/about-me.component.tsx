@@ -32,7 +32,7 @@ export const AboutMe = () => {
                 <SocialLink
                   href={social.link}
                   className={styles.socialLink}
-                  media={social.media}
+                  text={social.media}
                   icon={social.icon}
                 />
               </RevealMotion>
