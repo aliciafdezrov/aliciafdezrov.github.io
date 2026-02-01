@@ -38,7 +38,13 @@ import {
   SiGit,
 } from "react-icons/si";
 
-import { FaGithub, FaLinkedin, FaInstagram, FaReact } from "react-icons/fa6";
+import {
+  FaGithub,
+  FaLinkedin,
+  FaInstagram,
+  FaReact,
+  FaHeart,
+} from "react-icons/fa6";
 import { MdOutlineLightMode, MdOutlineNightlight } from "react-icons/md";
 
 export const iconLibrary: Record<string, IconType> = {
@@ -77,6 +83,7 @@ export const iconLibrary: Record<string, IconType> = {
   git: SiGit,
   lightMode: MdOutlineLightMode,
   darkMode: MdOutlineNightlight,
+  love: FaHeart,
 };
 
 export type IconLibrary = typeof iconLibrary;
