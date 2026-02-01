@@ -162,21 +162,21 @@ export const info = {
     name: "Alicia Fernández",
     role: "Senior Frontend Developer",
     description:
-      " Senior Frontend Developer with 9+ years of experience building scalable, high-quality web applications using React, TypeScript, and Next.js. Skilled in unit, component, and end-to-end testing (Jest, Vitest, Cypress, Playwright) and modern frontend tooling (Webpack, Vite, Parcel, Rspack). Experienced in working closely with product, UX/UI, and backend teams to deliver solutions that are not only technically solid but genuinely meet user needs, ensuring an optimal user experience.",
+      "Senior Frontend Developer with 9+ years of experience building scalable, high-quality web applications using React, TypeScript, and Next.js. Skilled in unit, component, and end-to-end testing (Jest, Vitest, Cypress, Playwright) and modern frontend tooling (Webpack, Vite, Parcel, Rspack). Experienced in working closely with product, UX/UI, and backend teams to deliver solutions that are not only technically solid but genuinely meet user needs, ensuring an optimal user experience.",
     socialMedia: [
       {
         media: "LinkedIn",
-        link: "",
+        link: "https://www.linkedin.com/in/alicia-fern%C3%A1ndez-rovira-70885811a",
         icon: "linkedin",
       },
       {
         media: "Email",
-        link: "",
+        link: "mailto:aliciafdezrov@gmail.com",
         icon: "email",
       },
       {
         media: "Github",
-        link: "",
+        link: "https://github.com/aliciafdezrov",
         icon: "github",
       },
     ],
