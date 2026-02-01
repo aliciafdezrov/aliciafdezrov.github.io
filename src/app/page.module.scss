@@ -1,4 +1,5 @@
 @use "@/styles/spacing.scss" as spacing;
+@use "@/styles/breakpoints.scss" as breakpoints;
 
 .page {
   --background: var(--color-background-alt);
@@ -18,7 +19,7 @@
   font-family: var(--font-geist-sans);
   padding: spacing.$spacing-component-ml;
 
-  @media (min-width: 1015px) {
+  @media (min-width: breakpoints.$breakpoint-desktop) {
     padding: spacing.$spacing-component-xl;
   }
 }
