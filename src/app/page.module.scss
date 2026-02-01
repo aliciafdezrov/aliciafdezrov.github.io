@@ -33,4 +33,8 @@
 .content {
   flex: 9;
   position: relative;
+
+  section {
+    scroll-margin-top: 5rem;
+  }
 }
