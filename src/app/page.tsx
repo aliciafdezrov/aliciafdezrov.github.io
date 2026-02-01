@@ -4,6 +4,7 @@ import { Experience } from "@/pods/experience/experience.component";
 import { TechnicalSkills } from "@/pods/technical-skills/technical-skills.component";
 import { UserProfile } from "@/pods/user-profile/user-profile.component";
 import { EducationAndCertifications } from "@/pods/education-and-certifications/education-and-certifications.component";
+import { Section } from "@/core/sections";
 
 export default function Home() {
   return (
@@ -11,16 +12,16 @@ export default function Home() {
       <main className={styles.main}>
         <UserProfile />
         <div className={styles.content}>
-          <section id="about-me">
+          <section id={Section.AboutMe}>
             <AboutMe />
           </section>
-          <section id="experience">
+          <section id={Section.Experience}>
             <Experience />
           </section>
-          <section id="skills">
+          <section id={Section.Skills}>
             <TechnicalSkills />
           </section>
-          <section id="education">
+          <section id={Section.Education}>
             <EducationAndCertifications />
           </section>
         </div>
