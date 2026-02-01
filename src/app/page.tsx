@@ -11,10 +11,18 @@ export default function Home() {
       <main className={styles.main}>
         <UserProfile />
         <div className={styles.content}>
-          <AboutMe />
-          <Experience />
-          <TechnicalSkills />
-          <EducationAndCertifications />
+          <section id="about-me">
+            <AboutMe />
+          </section>
+          <section id="experience">
+            <Experience />
+          </section>
+          <section id="skills">
+            <TechnicalSkills />
+          </section>
+          <section id="education">
+            <EducationAndCertifications />
+          </section>
         </div>
       </main>
     </div>
