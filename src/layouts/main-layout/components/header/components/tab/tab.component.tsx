@@ -22,13 +22,10 @@ export const Tab = (props: TabProps) => {
   };
 
   return (
-    <button
-      className={styles.tab}
-      onClick={scrollToSection}
-      type="button"
-    >
+    <button className={styles.tab} onClick={scrollToSection} type="button">
       {iconName && <Icon iconName={iconName} />}
-      {children}
+
+      <span className={styles.content}>{children}</span>
     </button>
   );
 };

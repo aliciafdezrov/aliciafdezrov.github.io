@@ -1,11 +1,17 @@
 @use "@/styles/spacing.scss" as spacing;
 @use "@/styles/typography.scss" as typography;
+@use "@/styles/breakpoints.scss" as breakpoints;
 
 .container {
   display: flex;
   justify-content: space-around;
   align-items: baseline;
   padding: spacing.$spacing-component-ml spacing.$spacing-component-l;
+
+  @media (max-width: breakpoints.$breakpoint-md) {
+    margin-bottom: 5rem;
+    padding-top: 0;
+  }
 }
 
 .text {

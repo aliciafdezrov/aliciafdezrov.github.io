@@ -1,4 +1,5 @@
 @use "@/styles/borders.scss" as borders;
+@use "@/styles/breakpoints.scss" as breakpoints;
 
 .tab {
   display: flex;
@@ -27,5 +28,13 @@
   &:disabled {
     opacity: 0.5;
     cursor: not-allowed;
+  }
+}
+
+.content {
+  display: inline-block;
+
+  @media (max-width: breakpoints.$breakpoint-md) {
+    display: none;
   }
 }
