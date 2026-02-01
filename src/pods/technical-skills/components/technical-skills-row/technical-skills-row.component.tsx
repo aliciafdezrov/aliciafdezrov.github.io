@@ -2,6 +2,7 @@ import { Tag } from "@/components/tag/tag.component";
 import { TechnicalSkillsItem } from "../../technical-skills.vm";
 import styles from "./technical-skills-row.module.scss";
 import { RevealMotion } from "@/components/reveal-motion/reveal-motion.component";
+import { PAGE_ANIMATION_DELAYS } from "@/core/animation-delays";
 
 interface TechnicalSkillsRowProps {
   technicalSkillsRow: TechnicalSkillsItem;
@@ -11,7 +12,8 @@ export const TechnicalSkillsRowComponent = async (
   props: TechnicalSkillsRowProps
 ) => {
   const { technicalSkillsRow, index } = props;
-  const baseDelay = 2.1 + index * 0.15;
+  const config = PAGE_ANIMATION_DELAYS.technicalSkills.rows;
+  const baseDelay = config.base + index * config.increment;
 
   return (
     <div className={styles.container}>
@@ -19,7 +21,7 @@ export const TechnicalSkillsRowComponent = async (
         <h4 className={styles.title}>{technicalSkillsRow.title}</h4>
       </RevealMotion>
       {technicalSkillsRow.description && (
-        <RevealMotion delay={baseDelay + 0.05} className={styles.description}>
+        <RevealMotion delay={baseDelay + config.offsets.description} className={styles.description}>
           {technicalSkillsRow.description}
         </RevealMotion>
       )}

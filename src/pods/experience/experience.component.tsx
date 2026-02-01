@@ -2,13 +2,14 @@ import { getExperience } from "./experience.actions";
 import styles from "./experience.module.scss";
 import { ExperienceRowComponent } from "./components/experience-row/experience-row.component";
 import { RevealMotion } from "@/components/reveal-motion/reveal-motion.component";
+import { PAGE_ANIMATION_DELAYS } from "@/core/animation-delays";
 
 export const Experience = () => {
   const experience = getExperience();
 
   return (
     <div className={styles.container}>
-      <RevealMotion delay={0.4}>
+      <RevealMotion delay={PAGE_ANIMATION_DELAYS.experience.title}>
         <h3 className={styles.title}>Work Experience</h3>
       </RevealMotion>
       {experience.jobs.map((job, index) => (
