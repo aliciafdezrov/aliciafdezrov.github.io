@@ -24,13 +24,13 @@
   }
 
   .darkIcon {
-    display: block;
+    display: flex;
   }
 }
 
 [data-theme="dark"] .themeToggle {
   .lightIcon {
-    display: block;
+    display: flex;
   }
 
   .darkIcon {
