@@ -1,5 +1,6 @@
 @use "@/styles/spacing.scss" as spacing;
 @use "@/styles/borders.scss" as borders;
+@use "@/styles/breakpoints.scss" as breakpoints;
 
 .container {
   display: grid;
@@ -10,24 +11,31 @@
   z-index: 9;
   padding: spacing.$spacing-component-xs;
   align-items: center;
-  height: 100%;
+
+  @media (max-width: breakpoints.$breakpoint-md) {
+    grid-template-areas: ". toolbar .";
+    top: auto;
+    bottom: spacing.$spacing-component-ml;
+    position: fixed;
+  }
 }
 
 .region {
   grid-area: region;
+
+  @media (max-width: breakpoints.$breakpoint-md) {
+    display: none;
+  }
 }
 
 .toolbar {
   grid-area: toolbar;
   padding: spacing.$spacing-component-xxs;
-  /**Border properties*/
   border: 1px solid var(--color-border-subtle);
   border-radius: borders.$border-radius-lg;
 
   background-color: var(--color-background);
 
-  //min-width: 100%;
-  //width: 0px;
   width: fit-content;
 
   display: flex;
@@ -38,5 +46,5 @@
 
 .divider {
   height: 100%;
-  border-left:1px solid var(--color-border-tag);
+  border-left: 1px solid var(--color-border-tag);
 }

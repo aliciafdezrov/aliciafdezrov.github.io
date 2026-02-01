@@ -1,6 +1,7 @@
-@use '@/styles/typography.scss' as typography;
-@use '@/styles/spacing.scss' as spacing;
-@use '@/styles/borders.scss' as borders;
+@use "@/styles/typography.scss" as typography;
+@use "@/styles/spacing.scss" as spacing;
+@use "@/styles/borders.scss" as borders;
+@use "@/styles/breakpoints.scss" as breakpoints;
 
 .container {
   display: flex;
@@ -15,23 +16,26 @@
 
 .title {
   @include typography.heading-xxl;
-
   text-wrap: balance;
-
   margin: 0;
+
+  @media (max-width: breakpoints.$breakpoint-md) {
+    text-align: center;
+  }
 }
 
 .role {
   @include typography.heading-m;
-
   color: var(--color-text-tertiary);
+
+  @media (max-width: breakpoints.$breakpoint-md) {
+    text-align: center;
+  }
 }
 
 .description {
   @include typography.body-l;
-
   margin-bottom: spacing.$spacing-component-xxl;
-
   width: 100%;
   text-wrap: pretty;
 }
@@ -40,12 +44,13 @@
   display: flex;
   flex-wrap: wrap;
   gap: spacing.$spacing-component-xs;
-
   padding-top: spacing.$spacing-component-m;
-
   padding-bottom: spacing.$spacing-component-xs;
-
   margin-bottom: spacing.$spacing-component-l;
+
+  @media (max-width: breakpoints.$breakpoint-md) {
+    justify-content: center;
+  }
 }
 
 .socialLink {
