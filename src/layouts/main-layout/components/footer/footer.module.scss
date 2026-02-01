@@ -5,7 +5,7 @@
 .container {
   display: flex;
   justify-content: space-around;
-  align-items: baseline;
+  align-items: center;
   padding: spacing.$spacing-component-ml spacing.$spacing-component-l;
 
   @media (max-width: breakpoints.$breakpoint-md) {

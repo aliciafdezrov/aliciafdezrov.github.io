@@ -1,4 +1,3 @@
-import { Icon } from "@/components/icon/Icon.component";
 import { getAboutMe } from "./about-me.actions";
 import styles from "./about-me.module.scss";
 import { RevealMotion } from "@/components/reveal-motion/reveal-motion.component";

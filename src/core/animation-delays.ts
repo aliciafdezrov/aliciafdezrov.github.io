@@ -45,4 +45,5 @@ export const PAGE_ANIMATION_DELAYS = {
       },
     },
   },
+  userProfile: 0
 } as const;
