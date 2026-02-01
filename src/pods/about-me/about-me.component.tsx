@@ -9,18 +9,18 @@ export const AboutMe = async () => {
   return (
     <>
       <div className={styles.container}>
-        <RevealMotion translateY="0.25rem">
+        <RevealMotion delay={0}>
           <h1 className={styles.title}>{aboutMe.name}</h1>
         </RevealMotion>
 
-        <RevealMotion translateY="0.25rem" delay={0.2}>
+        <RevealMotion delay={0.1}>
           <h2 className={styles.role}>{aboutMe.role}</h2>
         </RevealMotion>
 
         {aboutMe.socialMedia.length > 0 && (
           <div className={styles.socialLinks}>
             {aboutMe.socialMedia.map((social, index) => (
-              <RevealMotion key={index} delay={0.2}>
+              <RevealMotion key={index} delay={0.15 + index * 0.03}>
                 <a
                   key={index}
                   href={social.link}
@@ -36,7 +36,7 @@ export const AboutMe = async () => {
         )}
 
         {aboutMe.description && (
-          <RevealMotion translateY="0.5rem" delay={0.4}>
+          <RevealMotion delay={0.3}>
             <div className={styles.description}>{aboutMe.description}</div>
           </RevealMotion>
         )}

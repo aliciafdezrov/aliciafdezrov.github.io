@@ -13,7 +13,7 @@ interface RevealMotionProps extends React.PropsWithChildren {
 export const RevealMotion = ({
   children,
   delay = 0,
-  translateY,
+  translateY = "1rem",
   className,
   ...rest
 }: RevealMotionProps) => {

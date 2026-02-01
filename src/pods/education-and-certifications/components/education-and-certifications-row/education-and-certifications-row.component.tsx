@@ -4,32 +4,34 @@ import styles from "./education-and-certifications-row.module.scss";
 
 interface EducationAndCertificationsRowProps {
   educationAndCertificationsRow: EducationAndCertificationsItem;
+  index: number;
 }
 export const EducationAndCertificationsRowComponent = async (
   props: EducationAndCertificationsRowProps
 ) => {
-  const { educationAndCertificationsRow } = props;
+  const { educationAndCertificationsRow, index } = props;
+  const baseDelay = 3.1 + index * 0.25;
 
   return (
     <div className={styles.container}>
       <div className={styles.header}>
-        <RevealMotion>
+        <RevealMotion delay={baseDelay}>
           <h4 className={styles.title}>
             {educationAndCertificationsRow.title}
           </h4>
         </RevealMotion>
 
-        <RevealMotion className={styles.date}>
+        <RevealMotion delay={baseDelay + 0.05} className={styles.date}>
           {educationAndCertificationsRow.date}
         </RevealMotion>
       </div>
 
-      <RevealMotion className={styles.subtitle}>
+      <RevealMotion delay={baseDelay + 0.1} className={styles.subtitle}>
         {educationAndCertificationsRow.subtitle}
       </RevealMotion>
 
       {educationAndCertificationsRow.description && (
-        <RevealMotion className={styles.description}>
+        <RevealMotion delay={baseDelay + 0.15} className={styles.description}>
           {educationAndCertificationsRow.description}
         </RevealMotion>
       )}

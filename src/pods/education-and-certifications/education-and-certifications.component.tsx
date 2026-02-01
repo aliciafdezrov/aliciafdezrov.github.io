@@ -8,14 +8,15 @@ export const EducationAndCertifications = async () => {
 
   return (
     <>
-      <RevealMotion>
+      <RevealMotion delay={3.0}>
         <h3 className={styles.title}>Education & Certifications</h3>
       </RevealMotion>
       <div className={styles.content}>
-        {educationAndCertifications.degrees.map((degree) => (
+        {educationAndCertifications.degrees.map((degree, index) => (
           <EducationAndCertificationsRowComponent
             key={degree.date}
             educationAndCertificationsRow={degree}
+            index={index}
           />
         ))}
       </div>
