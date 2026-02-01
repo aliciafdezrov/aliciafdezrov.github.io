@@ -1,5 +1,6 @@
 @use "@/styles/spacing.scss" as spacing;
 @use "@/styles/typography.scss" as typography;
+@use "@/styles/borders.scss" as borders;
 
 .tag {
   display: flex;
@@ -13,7 +14,7 @@
   border: 1px solid var(--color-border-tag);
 
   /*border-radius*/
-  border-radius: 0.5rem;
+  border-radius: borders.$border-radius-sm;
   user-select: none;
 }
 
