@@ -17,25 +17,8 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Alicia Fernandez | Frontend Developer",
   description: "React · Typescript",
-
   icons: {
     icon: "./favicon.svg",
-  },
-
-  openGraph: {
-    title: "Alicia Fernandez | Frontend Developer",
-    description:
-      "Frontend Developer specialized in React, Next.js, and modern web experiences",
-    //url: "https://domaino.com",
-    siteName: "Alicia Fernandez Portfolio",
-    /*  images: [
-      {
-        url: "https://domain/preview.png",
-        width: 1200,
-        height: 630,
-      },
-    ], */
-    type: "website",
   },
 };
 

@@ -7,12 +7,12 @@ export default function MainLayout(props: React.PropsWithChildren) {
   const { children } = props;
 
   return (
-    <div>
+    <>
       <TransitionMask />
       <Background />
       <Header />
       {children}
       <Footer />
-    </div>
+    </>
   );
 }
