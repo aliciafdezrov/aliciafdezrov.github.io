@@ -3,7 +3,6 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.scss";
 import MainLayout from "@/layouts/main-layout/main.layout";
 import { getTheme } from "@/lib/theme";
-import { DEFAULT_THEME } from "@/core/theme";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -49,23 +48,6 @@ export default async function RootLayout({
 
   return (
     <html lang="en" data-theme={theme}>
-      <head>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              (function() {
-                try {
-                  const theme = document.cookie
-                    .split('; ')
-                    .find(row => row.startsWith('theme='))
-                    ?.split('=')[1] || '${DEFAULT_THEME}';
-                  document.documentElement.setAttribute('data-theme', theme);
-                } catch (e) {}
-              })();
-            `,
-          }}
-        />
-      </head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <MainLayout>{children}</MainLayout>
       </body>
