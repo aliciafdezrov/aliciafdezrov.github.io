@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useRef, useState } from "react";
+import { useState } from "react";
 import { motion } from "motion/react";
 import styles from "./reveal-motion.module.scss";
 
@@ -8,12 +8,14 @@ interface RevealMotionProps extends React.PropsWithChildren {
   delay?: number;
   translateY?: string;
   className?: string;
+  blur?: string;
 }
 
 export const RevealMotion = ({
   children,
   delay = 0,
   translateY = "1rem",
+  blur = "1rem",
   className,
   ...rest
 }: RevealMotionProps) => {
@@ -39,7 +41,7 @@ export const RevealMotion = ({
     <motion.div
       initial={{
         maskPosition: "100% 0",
-        filter: "blur(1rem)",
+        filter: `blur(${blur})`,
         transform: `translateY(${translateY})`,
       }}
       animate={{
@@ -49,8 +51,8 @@ export const RevealMotion = ({
       }}
       transition={{
         delay: delay,
-        duration: 2,
-        ease: "easeInOut",
+        duration: 1,
+        ease: "easeOut",
       }}
       onAnimationComplete={handleAnimationComplete}
       className={`${styles.revealMotion} ${className || ""}`}

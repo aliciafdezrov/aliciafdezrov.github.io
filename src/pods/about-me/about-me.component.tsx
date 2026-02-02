@@ -40,7 +40,11 @@ export const AboutMe = () => {
         )}
 
         {aboutMe.description && (
-          <RevealMotion delay={delays.description}>
+          <RevealMotion
+            delay={delays.description}
+            translateY="0.25rem"
+            blur="0.25rem"
+          >
             <div className={styles.description}>{aboutMe.description}</div>
           </RevealMotion>
         )}
