@@ -4,3 +4,6 @@ export enum Theme {
 }
 
 export const THEME_COOKIE_NAME = "theme";
+
+
+export const DEFAULT_THEME = Theme.Dark;
