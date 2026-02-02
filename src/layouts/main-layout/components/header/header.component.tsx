@@ -20,7 +20,7 @@ export const Header = () => {
         <Tab sectionId={Section.Education} iconName="book">
           Education
         </Tab>
-        <div className={styles.divider} />
+        <span className={styles.divider} />
         <ThemeToggle />
       </div>
     </header>

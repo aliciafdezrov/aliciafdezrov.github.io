@@ -1,11 +1,12 @@
 @use "@/styles/borders.scss" as borders;
 @use "@/styles/breakpoints.scss" as breakpoints;
+@use "@/styles/spacing.scss" as spacing;
 
 .tab {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.5rem;
+  gap: spacing.$spacing-component-xs;
 
   border-radius: borders.$border-radius-md;
   cursor: pointer;
@@ -15,7 +16,7 @@
 
   height: 2rem;
   min-height: 2rem;
-  padding: 0.25rem 0.5rem;
+  padding: spacing.$spacing-component-xxs spacing.$spacing-component-xs;
 
   font: inherit;
   color: inherit;
