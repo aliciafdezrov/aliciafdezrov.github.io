@@ -17,9 +17,6 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Alicia Fernandez | Frontend Developer",
   description: "React · Typescript",
-  icons: {
-    icon: "./favicon.svg",
-  },
 };
 
 export default function RootLayout({
