@@ -10,7 +10,7 @@ export const TechnicalSkills = () => {
   return (
     <>
       <RevealMotion delay={PAGE_ANIMATION_DELAYS.technicalSkills.title}>
-        <h3 className={styles.title}>Technical skills</h3>
+        <h3 className={styles.title}>Technical Expertise</h3>
       </RevealMotion>
       <div className={styles.content}>
         {technicalSkills.categories.map((category, index) => (
