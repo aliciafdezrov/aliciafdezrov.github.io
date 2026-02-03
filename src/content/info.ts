@@ -150,7 +150,7 @@ export const info = {
         { name: "BEM", icon: "" },
         { name: "styled-components", icon: "styled-components" },
         { name: "responsive design", icon: "" },
-        { name: "accesibility (WCAG/ARIA)"}
+        { name: "accesibility (WCAG/ARIA)", icon: ""}
       ],
       description: "",
     },
