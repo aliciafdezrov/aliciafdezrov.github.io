@@ -18,6 +18,11 @@ import {
   PiBookBookmarkDuotone,
   PiImageDuotone,
   PiBriefcaseDuotone,
+  PiStackDuotone,
+  PiGearSixDuotone,
+  PiTreeStructureDuotone,
+  PiPuzzlePieceDuotone,
+  PiLightningDuotone,
 } from "react-icons/pi";
 
 import {
@@ -84,6 +89,11 @@ export const iconLibrary: Record<string, IconType> = {
   lightMode: MdOutlineLightMode,
   darkMode: MdOutlineNightlight,
   love: FaHeart,
+  stack: PiStackDuotone,
+  gear: PiGearSixDuotone,
+  "tree-structure": PiTreeStructureDuotone,
+  puzzle: PiPuzzlePieceDuotone,
+  lightning: PiLightningDuotone,
 };
 
 export type IconLibrary = typeof iconLibrary;
