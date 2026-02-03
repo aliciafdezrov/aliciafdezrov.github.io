@@ -2,9 +2,23 @@ export const info = {
   academic: {
     degrees: [
       {
+        name: "The official react query course",
+        location: "Query.gg",
+        date: "Nov 2024",
+        description:
+          "Official TanStack Query course covering advanced React server-state management, data caching, synchronization, and performance optimization techniques.",
+      },
+      {
+        name: "First Certificate in English",
+        location: "Cambridge Assessment English",
+        date: "Jul 21",
+      },
+      {
         name: "Master's Degree in Frontend Development and UX",
         location: "Lemoncode",
         date: "Sept 2021 - Present",
+        description:
+          "Lemoncode Frontend Master’s Program focused on modern JavaScript frameworks, frontend architecture, testing, deployment, and full project development using industry-standard tools and collaborative workflows.",
       },
       {
         name: "Bachelor's Degree in Health Engineering",
@@ -110,6 +124,17 @@ export const info = {
       description: "",
     },
     {
+      category: "Architecture & Patterns",
+      values: [
+        { name: "Feature-based architecture", icon: "stack" },
+        { name: "State management patterns", icon: "gear" },
+        { name: "Clean Architecture", icon: "tree-structure" },
+        { name: "React design patterns", icon: "puzzle" },
+        { name: "Performance optimization", icon: "lightning" },
+      ],
+      description: "",
+    },
+    {
       category: "Languages",
       values: [
         { name: "Typescript", icon: "typescript" },
@@ -125,6 +150,7 @@ export const info = {
         { name: "BEM", icon: "" },
         { name: "styled-components", icon: "styled-components" },
         { name: "responsive design", icon: "" },
+        { name: "accesibility (WCAG/ARIA)"}
       ],
       description: "",
     },
@@ -138,7 +164,7 @@ export const info = {
       description: "",
     },
     {
-      category: "Bundling",
+      category: "Build Tools & Tooling",
       values: [
         { name: "Webpack", icon: "webpack" },
         { name: "Vite", icon: "vite" },
