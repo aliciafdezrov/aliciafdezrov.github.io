@@ -16,7 +16,7 @@ export const info = {
       {
         name: "Master's Degree in Frontend Development and UX",
         location: "Lemoncode",
-        date: "Sept 2021 - Present",
+        date: "Sept 2021 - Jun 2022",
         description:
           "Lemoncode Frontend Master’s Program focused on modern JavaScript frameworks, frontend architecture, testing, deployment, and full project development using industry-standard tools and collaborative workflows.",
       },
