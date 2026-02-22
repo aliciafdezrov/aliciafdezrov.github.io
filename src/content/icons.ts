@@ -41,6 +41,7 @@ import {
   SiWebpack,
   SiVite,
   SiGit,
+  SiRedux,
 } from "react-icons/si";
 
 import {
@@ -86,6 +87,7 @@ export const iconLibrary: Record<string, IconType> = {
   webpack: SiWebpack,
   vite: SiVite,
   git: SiGit,
+  redux: SiRedux,
   lightMode: MdOutlineLightMode,
   darkMode: MdOutlineNightlight,
   love: FaHeart,

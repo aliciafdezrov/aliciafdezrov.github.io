@@ -75,9 +75,10 @@ export const info = {
         date: "May 2022 - Present",
         company: "IriusRisk",
         keyContributions: [
-          "Led the migration of a legacy app to React while maintaining production releases, ensuring uninterrupted client service and supporting platform scalability during growth from ~6M USD ARR in 2022 to >20M ARR in 2025 (>30% YoY growth, >99.99% SLA).",
-          "Implemented a comprehensive automated testing strategy (unit, component, e2e) for the frontend, accelerating release cycles to ~4 releases per month and ~2k deployments per quarter while sustaining continuous delivery of value and innovation.",
-          "Acted as Frontend Tech Lead, driving key architectural decisions, defining frontend standards, and mentoring junior developers while preparing the UI platform for enterprise readiness and large-scale customer adoption (100s to 10s of thousands of users).",
+          "Led the migration from legacy Vaadin app to React while maintaining production releases, ensuring uninterrupted client service and scaling revenue from ~6M USD ARR in 2022 to >20M ARR in 2025 (>30% YoY growth).",
+          "Implemented a comprehensive automated testing strategy (unit, component, e2e) for the frontend, accelerating release cycles to ~4 releases per month while sustaining continuous delivery of value and innovation.",
+          "Served as Frontend Tech Lead, driving key architectural decisions, defining frontend standards while preparing the UI platform for enterprise readiness and large-scale customer adoption (100s to 10s of thousands of users).",
+          "Led and coached fullstack developers into frontend specialization, achieving 3× faster delivery and enabling seamless knowledge transfer across the team.",
           "Collaborated closely with product, UX/UI, and backend teams and actively participated in multiple end-to-end product discovery cycles (user interviews, ideation, assumption mapping) to deliver user-focused solutions aligned with large-scale customer needs.",
           "Built and scaled frontend integrations supporting 1000s of Issue Tracker connections across Jira, Rally, Azure DevOps (TFS), and ServiceNow, enabling customers to manage 10s of thousands of tickets through high-performance, reliable UI workflows.",
         ],
@@ -87,9 +88,9 @@ export const info = {
         date: "Apr 2020 - May 2022",
         company: "ITRS Group",
         keyContributions: [
-          "Developed real-time dashboards to monitor server status and ensure high availability, handling large volumes of data for continuous updates and enabling proactive detection of incidents that reduced operational risk and service disruption in mission-critical financial systems.",
-          "Contributed to a micro-frontend architecture using Webpack Module Federation, improving modular delivery across complex monitoring interfaces and supporting faster evolution of enterprise observability features for large-scale financial clients.",
-          "Built scalable React applications with robust state management and routing, collaborating closely with design, QA, and product to deliver data-intensive UIs that provided real-time visibility into infrastructure health and business-critical processes.",
+          "Architected a micro-frontend system using Webpack Module Federation and React for Active Dashboard, decoupling deployment of dashboard modules across a real-time monitoring product used by 9 of the 10 largest global investment banks (3,000+ enterprise clients).",
+          "Built high-density, real-time data visualization components with React and D3.js for financial trading environments; product scaled from £24.5M to £33.5M ARR (>37\%, 2 years).",
+          "Drove frontend performance optimization for a React application handling high-frequency real-time data streams, identifying and resolving rendering bottlenecks to ensure reliability for financial operations teams monitoring live trading infrastructure..",
         ],
       },
       {
@@ -97,14 +98,14 @@ export const info = {
         date: "Jan 2018 - Apr 2020",
         company: "GSL",
         keyContributions: [
-          "Product-focused full-stack developer translating client needs into a real-time medical appointment system with React and Java/MySQL deployed across clinics in Spain and Mexico, conducting user interviews and ideation sessions to improve usability and align technical implementation with business requirements." ]      
+          "Drove frontend migration from a legacy PHP platform to React/TypeScript with Redux, integrating a centralized authentication microservice shared across multiple application stacks; the modernized platform supported the company's expansion from Spain into the Mexican market." ]      
       },
       {
         role: "Junior FullStack Developer",
         date: "Sept 2016 - Jan 2018",
         company: "University of Málaga",
         keyContributions: [
-          "Gained early frontend development experience while completing degree studies, working in a Big Data research team developing internal tools with React, Java, and MongoDB.",
+          "Built a React and TypeScript-first codebase mobile SPA integrating Bluetooth beacon data to surface real-time parking occupancy across university facilities.",
         ],
       },
     ],
@@ -116,7 +117,7 @@ export const info = {
         { name: "React", icon: "react" },
         { name: "Next.js", icon: "nextjs" },
         { name: "React router", icon: "react-router" },
-        { name: "Tanstack Query", icon: "tanstack-query" },
+        { name: "TanStack Query", icon: "tanstack-query" },
       ],
       description: "",
     },
@@ -132,9 +133,18 @@ export const info = {
       description: "",
     },
     {
+      category: "State Management",
+      values: [
+        { name: "Zustand", icon: "" },
+        { name: "Redux", icon: "redux" },
+        { name: "Context API", icon: "" },
+      ],
+      description: "",
+    },
+    {
       category: "Languages",
       values: [
-        { name: "Typescript", icon: "typescript" },
+        { name: "TypeScript", icon: "typescript" },
         { name: "JavaScript (ES6+)", icon: "javascript" },
       ],
       description: "",
@@ -185,11 +195,11 @@ export const info = {
     name: "Alicia Fernández",
     role: "Senior Frontend Developer",
     description:
-      "Senior Frontend Developer with 9+ years of experience building scalable, high-quality web applications using React, TypeScript, and Next.js. Skilled in unit, component, and end-to-end testing (Jest, Vitest, Cypress, Playwright) and modern frontend tooling (Webpack, Vite, Parcel, Rspack). Experienced in working closely with product, UX/UI, and backend teams to deliver solutions that are not only technically solid but genuinely meet user needs, ensuring an optimal user experience.",
+      "Senior Frontend Developer — combining deep engineering expertise with formal UX training (Master in Frontend UX) to bridge product, design, and engineering at scale. Specialized in React/TypeScript ecosystems, frontend architecture, and building testing cultures that scale.",
     socialMedia: [
       {
         media: "LinkedIn",
-        link: "https://www.linkedin.com/in/alicia-fern%C3%A1ndez-rovira-70885811a",
+        link: "https://www.linkedin.com/in/afdezrov",
         icon: "linkedin",
       },
       {
