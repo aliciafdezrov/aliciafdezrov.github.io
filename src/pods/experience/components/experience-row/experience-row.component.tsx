@@ -26,13 +26,19 @@ export const ExperienceRowComponent = async (props: ExperienceRowProps) => {
         {experienceRow.subtitle}
       </RevealMotion>
 
-      <ul className={styles.list}>
-        {experienceRow.keyContributions.map((contribution, contributionIndex) => (
-          <RevealMotion delay={baseDelay + config.offsets.contributions.base + contributionIndex * config.offsets.contributions.increment} key={contributionIndex}>
-            <li className={styles.listItem}>{contribution}</li>
-          </RevealMotion>
-        ))}
-      </ul>
+      {experienceRow.keyContributions.length === 1 ? (
+        <RevealMotion delay={baseDelay + config.offsets.contributions.base} className={styles.listItem}>
+          {experienceRow.keyContributions[0]}
+        </RevealMotion>
+      ) : (
+        <ul className={styles.list}>
+          {experienceRow.keyContributions.map((contribution, contributionIndex) => (
+            <RevealMotion delay={baseDelay + config.offsets.contributions.base + contributionIndex * config.offsets.contributions.increment} key={contributionIndex}>
+              <li className={styles.listItem}>{contribution}</li>
+            </RevealMotion>
+          ))}
+        </ul>
+      )}
     </div>
   );
 };
