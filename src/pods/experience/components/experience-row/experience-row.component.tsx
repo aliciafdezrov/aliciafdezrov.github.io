@@ -18,27 +18,36 @@ export const ExperienceRowComponent = async (props: ExperienceRowProps) => {
         <RevealMotion delay={baseDelay}>
           <h4 className={styles.title}>{experienceRow.title}</h4>
         </RevealMotion>
-        <RevealMotion delay={baseDelay + config.offsets.date} className={styles.date}>
+        <RevealMotion
+          delay={baseDelay + config.offsets.date}
+          className={styles.date}
+        >
           {experienceRow.date}
         </RevealMotion>
       </div>
-      <RevealMotion delay={baseDelay + config.offsets.subtitle} className={styles.subtitle}>
+      <RevealMotion
+        delay={baseDelay + config.offsets.subtitle}
+        className={styles.subtitle}
+      >
         {experienceRow.subtitle}
       </RevealMotion>
 
-      {experienceRow.keyContributions.length === 1 ? (
-        <RevealMotion delay={baseDelay + config.offsets.contributions.base} className={styles.listItem}>
-          {experienceRow.keyContributions[0]}
-        </RevealMotion>
-      ) : (
-        <ul className={styles.list}>
-          {experienceRow.keyContributions.map((contribution, contributionIndex) => (
-            <RevealMotion delay={baseDelay + config.offsets.contributions.base + contributionIndex * config.offsets.contributions.increment} key={contributionIndex}>
+      <ul className={styles.list}>
+        {experienceRow.keyContributions.map(
+          (contribution, contributionIndex) => (
+            <RevealMotion
+              delay={
+                baseDelay +
+                config.offsets.contributions.base +
+                contributionIndex * config.offsets.contributions.increment
+              }
+              key={contributionIndex}
+            >
               <li className={styles.listItem}>{contribution}</li>
             </RevealMotion>
-          ))}
-        </ul>
-      )}
+          )
+        )}
+      </ul>
     </div>
   );
 };
