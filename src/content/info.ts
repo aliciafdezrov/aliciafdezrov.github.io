@@ -11,7 +11,7 @@ export const info = {
       {
         name: "First Certificate in English",
         location: "Cambridge Assessment English",
-        date: "Jul 21",
+        date: "Jul 2021",
       },
       {
         name: "Master's Degree in Frontend Development and UX",
@@ -97,17 +97,14 @@ export const info = {
         date: "Jan 2018 - Apr 2020",
         company: "GSL",
         keyContributions: [
-          "Built internal company tools using React (frontend) and Java/MySQL (backend).",
-          "Implemented CI/CD pipelines for automated releases.",
-        ],
+          "Product-focused full-stack developer translating client needs into a real-time medical appointment system with React and Java/MySQL deployed across clinics in Spain and Mexico, conducting user interviews and ideation sessions to improve usability and align technical implementation with business requirements." ]      
       },
       {
         role: "Junior FullStack Developer",
         date: "Sept 2016 - Jan 2018",
         company: "University of Málaga",
         keyContributions: [
-          "Worked in a Big Data research team, developing internal tools with React, Java, and MongoDB.",
-          "Gained early experience in frontend development while completing degree studies",
+          "Gained early frontend development experience while completing degree studies, working in a Big Data research team developing internal tools with React, Java, and MongoDB.",
         ],
       },
     ],
