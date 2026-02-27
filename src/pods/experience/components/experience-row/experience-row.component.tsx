@@ -36,14 +36,16 @@ export const ExperienceRowComponent = async (props: ExperienceRowProps) => {
         {experienceRow.keyContributions.map(
           (contribution, contributionIndex) => (
             <RevealMotion
+              as="li"
               delay={
                 baseDelay +
                 config.offsets.contributions.base +
                 contributionIndex * config.offsets.contributions.increment
               }
               key={contributionIndex}
+              className={styles.listItem}
             >
-              <li className={styles.listItem}>{contribution}</li>
+              {contribution}
             </RevealMotion>
           )
         )}

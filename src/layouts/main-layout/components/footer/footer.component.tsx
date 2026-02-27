@@ -16,6 +16,7 @@ export const Footer = () => {
             key={link.media}
             icon={link.icon}
             href={link.link}
+            aria-label={link.media}
             className={styles.socialLink}
           />
         ))}

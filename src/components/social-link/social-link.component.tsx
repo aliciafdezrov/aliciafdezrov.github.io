@@ -16,7 +16,10 @@ export const SocialLink = ({ href, icon, text, ...props }: SocialLinkProps) => {
       rel="noopener noreferrer"
       {...props}
     >
-      <Icon iconName={icon} /> {text && text}
+      <span aria-hidden="true" className={styles.iconWrapper}>
+        <Icon iconName={icon} />
+      </span>
+      {text && text}
     </a>
   );
 };
