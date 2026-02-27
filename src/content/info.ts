@@ -75,12 +75,12 @@ export const info = {
         date: "May 2022 - Present",
         company: "IriusRisk",
         keyContributions: [
-          "Led the migration from legacy Vaadin app to React while maintaining production releases, ensuring uninterrupted client service and scaling revenue from ~6M USD ARR in 2022 to >20M ARR in 2025 (>30% YoY growth).",
-          "Implemented a comprehensive automated testing strategy (unit, component, e2e) for the frontend, accelerating release cycles to ~4 releases per month while sustaining continuous delivery of value and innovation.",
-          "Served as Frontend Tech Lead, driving key architectural decisions, defining frontend standards while preparing the UI platform for enterprise readiness and large-scale customer adoption (100s to 10s of thousands of users).",
-          "Led and coached fullstack developers into frontend specialization, achieving 3× faster delivery and enabling seamless knowledge transfer across the team.",
-          "Collaborated closely with product, UX/UI, and backend teams and actively participated in multiple end-to-end product discovery cycles (user interviews, ideation, assumption mapping) to deliver user-focused solutions aligned with large-scale customer needs.",
-          "Built and scaled frontend integrations supporting 1000s of Issue Tracker connections across Jira, Rally, Azure DevOps (TFS), and ServiceNow, enabling customers to manage 10s of thousands of tickets through high-performance, reliable UI workflows.",
+          "Led ~60% of the product migration from legacy Vaadin app to React while maintaining production releases, ensuring uninterrupted client service and scaling revenue from ~6M USD ARR in 2022 to >20M ARR in 2025",
+          "Collaborated closely with product, UX/UI, and backend teams and actively participated in multiple end-to-end product discovery cycles (including ideation and assumption mapping) to deliver user-focused solutions aligned with large-scale customer needs.",
+          "Owned end-to-end delivery of initiatives from early technical shaping and risk analysis to functional validation and release readiness, with an average development lead time of ~28 days per initiative.",
+          "Designed and rolled out a frontend testing pyramid, reducing functional testing time from up to ~17 days to 1–6 day windows while improving release stability. Improved delivery quality over time, reducing bug fix rate from 8–11 bugs in early large initiatives to 0–3 bugs in later deliveries (avg. 3.8 bugs per initiative). Led technical training sessions for senior frontend engineers to standardize the testing pyramid approach across teams, improving shared quality practices and reducing regression risk.",
+          "Drove frontend architectural improvements including adoption of TanStack Query, introduction of modular endpoint construction to remove duplicated API definitions, and use of reusable compound component patterns to improve scalability and maintainability. Enabling enterprise readiness and large-scale customer adoption (100s to 10s of thousands of users).",
+          "Developed and scaled enterprise-grade admin capabilities including RBAC configuration, granular permission management (>1000 permissions), and integrations with external issue trackers (Jira, Rally, Azure DevOps, ServiceNow) supporting high-volume ticket workflows.",
         ],
       },
       {
@@ -88,9 +88,9 @@ export const info = {
         date: "Apr 2020 - May 2022",
         company: "ITRS Group",
         keyContributions: [
-          "Architected a micro-frontend system using Webpack Module Federation and React for Active Dashboard, decoupling deployment of dashboard modules across a real-time monitoring product used by 9 of the 10 largest global investment banks (3,000+ enterprise clients).",
-          "Built high-density, real-time data visualization components with React and D3.js for financial trading environments; product scaled from £24.5M to £33.5M ARR (>37\%, 2 years).",
-          "Drove frontend performance optimization for a React application handling high-frequency real-time data streams, identifying and resolving rendering bottlenecks to ensure reliability for financial operations teams monitoring live trading infrastructure..",
+          "Architected a micro-frontend system using Webpack Module Federation and React for Active Dashboard, decoupling deployment of dashboard modules across a real-time monitoring product used by largest global investment banks (3,000+ enterprise clients).",
+          "Built high-density, real-time data visualization components with React and D3.js for financial trading environments.",
+          "Drove frontend performance optimization for a React application handling high-frequency real-time data streams, identifying and resolving rendering bottlenecks to ensure reliability for financial operations teams monitoring live trading infrastructure.",
         ],
       },
       {
@@ -98,7 +98,8 @@ export const info = {
         date: "Jan 2018 - Apr 2020",
         company: "GSL",
         keyContributions: [
-          "Drove frontend migration from a legacy PHP platform to React/TypeScript with Redux, integrating a centralized authentication microservice shared across multiple application stacks; the modernized platform supported the company's expansion from Spain into the Mexican market." ]      
+          "Drove frontend migration from a legacy PHP platform to React/TypeScript with Redux, integrating a centralized authentication microservice shared across multiple application stacks; the modernized platform supported the company's expansion from Spain into the Mexican market.",
+        ],
       },
       {
         role: "Junior FullStack Developer",
@@ -157,7 +158,7 @@ export const info = {
         { name: "BEM", icon: "" },
         { name: "styled-components", icon: "styled-components" },
         { name: "responsive design", icon: "" },
-        { name: "accesibility (WCAG/ARIA)", icon: ""}
+        { name: "accesibility (WCAG/ARIA)", icon: "" },
       ],
       description: "",
     },
@@ -195,7 +196,7 @@ export const info = {
     name: "Alicia Fernández",
     role: "Senior Frontend Developer",
     description:
-      "Senior Frontend Developer — combining deep engineering expertise with formal UX training (Master in Frontend UX) to bridge product, design, and engineering at scale. Specialized in React/TypeScript ecosystems, frontend architecture, and building testing cultures that scale.",
+      "Senior Frontend Engineer / Developer with technical ownership over major product modernization efforts, responsible for complex end-to-end initiatives impacting architecture, quality, and stability. Combines deep engineering expertise with formal UX training (Master in Frontend UX) to bridge product, design, and engineering at scale. Specialized in React/TypeScript ecosystems, frontend architecture, and building testing cultures that elevate the technical level of teams.",
     socialMedia: [
       {
         media: "LinkedIn",
