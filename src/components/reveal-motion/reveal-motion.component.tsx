@@ -10,6 +10,7 @@ interface RevealMotionProps extends React.PropsWithChildren {
   translateY?: string;
   className?: string;
   blur?: string;
+  as?: keyof React.JSX.IntrinsicElements;
 }
 
 export const RevealMotion = ({
@@ -18,9 +19,11 @@ export const RevealMotion = ({
   translateY = "1rem",
   blur = "1rem",
   className,
+  as = "div",
   ...rest
 }: RevealMotionProps) => {
   const [maskRemoved, setMaskRemoved] = useState(false);
+  const MotionTag = (motion as unknown as Record<string, React.ElementType>)[as];
 
   const handleAnimationComplete = () => {
     setMaskRemoved(true);
@@ -29,14 +32,14 @@ export const RevealMotion = ({
   // If mask is removed after transition, use the no-mask version
   if (maskRemoved) {
     return (
-      <motion.div className={cn(styles.revealedNoMask, className)} {...rest}>
+      <MotionTag className={cn(styles.revealedNoMask, className)} {...rest}>
         {children}
-      </motion.div>
+      </MotionTag>
     );
   }
 
   return (
-    <motion.div
+    <MotionTag
       initial={{
         maskPosition: "100% 0",
         filter: `blur(${blur})`,
@@ -57,6 +60,6 @@ export const RevealMotion = ({
       {...rest}
     >
       {children}
-    </motion.div>
+    </MotionTag>
   );
 };
