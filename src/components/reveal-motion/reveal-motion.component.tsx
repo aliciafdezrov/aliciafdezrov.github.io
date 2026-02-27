@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { motion } from "motion/react";
 import styles from "./reveal-motion.module.scss";
+import { cn } from "@/lib/cn";
 
 interface RevealMotionProps extends React.PropsWithChildren {
   children: React.ReactNode;
@@ -28,10 +29,7 @@ export const RevealMotion = ({
   // If mask is removed after transition, use the no-mask version
   if (maskRemoved) {
     return (
-      <motion.div
-        className={`${styles.revealedNoMask} ${className || ""}`}
-        {...rest}
-      >
+      <motion.div className={cn(styles.revealedNoMask, className)} {...rest}>
         {children}
       </motion.div>
     );
@@ -55,7 +53,7 @@ export const RevealMotion = ({
         ease: "easeOut",
       }}
       onAnimationComplete={handleAnimationComplete}
-      className={`${styles.revealMotion} ${className || ""}`}
+      className={cn(styles.revealMotion, className)}
       {...rest}
     >
       {children}
