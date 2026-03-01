@@ -15,6 +15,12 @@ export const createInitialTechnicalSkillsApiItem = (): TechnicalSkillsApiItem =>
   description: "",
 });
 
-export type TechnicalSkillsApiInfo = Array<TechnicalSkillsApiItem>;
+export interface TechnicalSkillsApiInfo {
+  title: string;
+  skills: Array<TechnicalSkillsApiItem>;
+}
 
-export const createInitialTechnicalSkillsApiInfo = (): TechnicalSkillsApiInfo => [];
+export const createInitialTechnicalSkillsApiInfo = (): TechnicalSkillsApiInfo => ({
+  title: "",
+  skills: [],
+});

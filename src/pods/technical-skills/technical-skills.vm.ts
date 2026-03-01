@@ -16,9 +16,11 @@ export const createInitialTechnicalSkillsItem = (): TechnicalSkillsItem => ({
 });
 
 export interface TechnicalSkillsInfo {
+  title: string;
   categories: Array<TechnicalSkillsItem>;
 }
 
 export const createInitialTechnicalSkillsInfo = (): TechnicalSkillsInfo => ({
+  title: "",
   categories: [],
 });

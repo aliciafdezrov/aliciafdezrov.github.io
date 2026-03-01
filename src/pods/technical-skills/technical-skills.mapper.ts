@@ -16,6 +16,7 @@ export const mapTechnicalSkillsItemApiToTechnicalSkillsItem = (item: TechnicalSk
 
 export const mapApiTechnicalSkillsToTechnicalSkills = (data: TechnicalSkillsApiInfo): TechnicalSkillsInfo => {
     const technicalSkillsInfo: TechnicalSkillsInfo = createInitialTechnicalSkillsInfo();
-    technicalSkillsInfo.categories = data.map(mapTechnicalSkillsItemApiToTechnicalSkillsItem);
+    technicalSkillsInfo.title = data.title;
+    technicalSkillsInfo.categories = data.skills.map(mapTechnicalSkillsItemApiToTechnicalSkillsItem);
     return technicalSkillsInfo;
 };
