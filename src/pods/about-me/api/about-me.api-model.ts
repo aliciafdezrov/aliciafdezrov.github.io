@@ -10,10 +10,3 @@ export interface AboutMeApiInfo {
   description: string;
   socialMedia: SocialMediaApi[];
 }
-
-export const createInitialAboutMeApiInfo = (): AboutMeApiInfo => ({
-  name: "",
-  role: "",
-  description: "",
-  socialMedia: [],
-});

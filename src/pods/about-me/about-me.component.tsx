@@ -3,9 +3,14 @@ import styles from "./about-me.module.scss";
 import { RevealMotion } from "@/components/reveal-motion/reveal-motion.component";
 import { PAGE_ANIMATION_DELAYS } from "@/core/animation-delays";
 import { SocialLink } from "@/components/social-link/social-link.component";
+import { Lang } from "@/i18n/getDictionary";
 
-export const AboutMe = () => {
-  const aboutMe = getAboutMe();
+interface AboutMeProps {
+  lang: Lang;
+}
+
+export const AboutMe = ({ lang }: AboutMeProps) => {
+  const aboutMe = getAboutMe(lang);
   const delays = PAGE_ANIMATION_DELAYS.aboutMe;
 
   return (
