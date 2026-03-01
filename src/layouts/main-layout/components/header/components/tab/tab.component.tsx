@@ -7,10 +7,11 @@ import { IconName } from "@/content/icons";
 interface TabProps extends React.PropsWithChildren {
   iconName?: IconName;
   sectionId?: string;
+  ariaLabel?: string;
 }
 
 export const Tab = (props: TabProps) => {
-  const { children, iconName, sectionId } = props;
+  const { children, iconName, sectionId, ariaLabel } = props;
 
   const scrollToSection = () => {
     if (!sectionId) return;
@@ -22,8 +23,17 @@ export const Tab = (props: TabProps) => {
   };
 
   return (
-    <button className={styles.tab} onClick={scrollToSection} type="button">
-      {iconName && <Icon iconName={iconName} />}
+    <button
+      className={styles.tab}
+      onClick={scrollToSection}
+      type="button"
+      aria-label={ariaLabel}
+    >
+      {iconName && (
+        <span aria-hidden="true">
+          <Icon iconName={iconName} />
+        </span>
+      )}
 
       <span className={styles.content}>{children}</span>
     </button>

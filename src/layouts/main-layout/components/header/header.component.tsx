@@ -8,16 +8,16 @@ export const Header = () => {
     <header className={styles.container}>
       <span className={styles.region}>Europe/Spain</span>
       <div className={styles.toolbar}>
-        <Tab sectionId={Section.AboutMe} iconName="person">
+        <Tab sectionId={Section.AboutMe} iconName="person" aria-label="Navigate to About Me section">
           About
         </Tab>
-        <Tab sectionId={Section.Experience} iconName="briefcase">
+        <Tab sectionId={Section.Experience} iconName="briefcase" aria-label="Navigate to Experience section">
           Experience
         </Tab>
-        <Tab sectionId={Section.Skills} iconName="grid">
+        <Tab sectionId={Section.Skills} iconName="grid" aria-label="Navigate to Skills section">
           Skills
         </Tab>
-        <Tab sectionId={Section.Education} iconName="book">
+        <Tab sectionId={Section.Education} iconName="book" aria-label="Navigate to Education section">
           Education
         </Tab>
         <span className={styles.divider} />
