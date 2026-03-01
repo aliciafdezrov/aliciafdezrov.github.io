@@ -13,9 +13,11 @@ export const createInitialEducationAndCertificationsItem = (): EducationAndCerti
 });
 
 export interface EducationAndCertificationsInfo {
+  title: string;
   degrees: Array<EducationAndCertificationsItem>;
 }
 
 export const createInitialEducationAndCertificationsInfo = (): EducationAndCertificationsInfo => ({
+  title: "",
   degrees: [],
 });

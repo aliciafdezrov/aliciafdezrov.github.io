@@ -17,6 +17,7 @@ export const mapEducationAndCertificationsItemApiToEducationAndCertificationsIte
 
 export const mapApiEducationAndCertificationsToEducationAndCertifications = (data: EducationAndCertificationsApiInfo): EducationAndCertificationsInfo => {
     const educationAndCertificationsInfo: EducationAndCertificationsInfo = createInitialEducationAndCertificationsInfo();
+    educationAndCertificationsInfo.title = data.title;
     educationAndCertificationsInfo.degrees = data.degrees.map(mapEducationAndCertificationsItemApiToEducationAndCertificationsItem);
     return educationAndCertificationsInfo;
 };
