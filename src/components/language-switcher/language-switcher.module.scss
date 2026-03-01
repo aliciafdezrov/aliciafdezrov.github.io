@@ -1,0 +1,29 @@
+@use "@/styles/borders.scss" as borders;
+@use "@/styles/spacing.scss" as spacing;
+
+.switcher {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: borders.$border-radius-md;
+  border: 1px solid var(--color-transparent);
+  background: var(--color-transparent);
+  transition: all 0.2s ease-in-out;
+
+  height: 2rem;
+  min-height: 2rem;
+  padding: spacing.$spacing-component-xxs spacing.$spacing-component-xs;
+
+  font: inherit;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  color: var(--color-text-secondary);
+  text-decoration: none;
+
+  &:hover {
+    background: var(--color-border);
+    color: var(--color-text-primary);
+  }
+}

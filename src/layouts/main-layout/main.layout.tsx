@@ -2,17 +2,22 @@ import { Background } from "@/components/background/background.component";
 import { Header } from "./components/header/header.component";
 import { TransitionMask } from "./components/transition-mask/transition-mask.component";
 import { Footer } from "./components/footer/footer.component";
+import { Lang } from "@/i18n/getDictionary";
+import { getMainLayout } from "./main-layout.actions";
 
-export default function MainLayout(props: React.PropsWithChildren) {
-  const { children } = props;
+interface MainLayoutProps extends React.PropsWithChildren {
+  lang: Lang;
+}
 
+export default function MainLayout({ children, lang }: MainLayoutProps) {
+  const vm = getMainLayout(lang);
   return (
     <>
       <TransitionMask />
       <Background />
-      <Header />
+      <Header vm={vm.header} />
       {children}
-      <Footer />
+      <Footer vm={vm.footer} />
     </>
   );
 }
