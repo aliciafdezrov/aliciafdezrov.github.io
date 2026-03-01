@@ -30,7 +30,7 @@ export const Tab = (props: TabProps) => {
       aria-label={ariaLabel}
     >
       {iconName && (
-        <span aria-hidden="true">
+        <span aria-hidden="true" className={styles.icon}>
           <Icon iconName={iconName} />
         </span>
       )}
