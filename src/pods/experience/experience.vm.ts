@@ -13,9 +13,11 @@ export const createInitialExperienceItem = (): ExperienceItem => ({
 });
 
 export interface ExperienceInfo {
+  title: string;
   jobs: Array<ExperienceItem>;
 }
 
 export const createInitialExperienceInfo = (): ExperienceInfo => ({
+  title: "",
   jobs: [],
 });

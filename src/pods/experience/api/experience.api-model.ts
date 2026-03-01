@@ -13,9 +13,11 @@ export const createInitialExperienceApiItem = (): ExperienceApiItem => ({
 });
 
 export interface ExperienceApiInfo {
+  title: string;
   jobs: Array<ExperienceApiItem>;
 }
 
 export const createInitialExperienceApiInfo = (): ExperienceApiInfo => ({
+  title: "",
   jobs: [],
 });

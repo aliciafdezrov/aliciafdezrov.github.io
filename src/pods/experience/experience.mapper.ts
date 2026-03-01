@@ -17,6 +17,7 @@ export const mapExperienceItemApiToExperienceItem = (item: ExperienceApiItem): E
 
 export const mapApiExperienceToExperience = (data: ExperienceApiInfo): ExperienceInfo => {
     const experienceInfo: ExperienceInfo = createInitialExperienceInfo();
+    experienceInfo.title = data.title;
     experienceInfo.jobs = data.jobs.map(mapExperienceItemApiToExperienceItem);
     return experienceInfo;
 };
