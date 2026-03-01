@@ -1,17 +1,17 @@
 export interface LanguageItem {
   name: string;
-  description: string;
 }
 
 export const createInitialLanguageItem = (): LanguageItem => ({
   name: "",
-  description: "",
 });
 
 export interface AcademicInfo {
+  region: string;
   languages: Array<LanguageItem>;
 }
 
 export const createInitialAcademicInfo = (): AcademicInfo => ({
+  region: "",
   languages: [],
 });

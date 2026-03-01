@@ -14,7 +14,6 @@ export const mapLanguageItemApiToLanguageItem = (
 ): LanguageItem => {
   const languageItem = createInitialLanguageItem();
   languageItem.name = item.name;
-  languageItem.description = item.description;
   return languageItem;
 };
 
@@ -22,6 +21,7 @@ export const mapApiAcademicToAcademic = (
   data: AcademicApiInfo
 ): AcademicInfo => {
   const academicInfo: AcademicInfo = createInitialAcademicInfo();
+  academicInfo.region = data.region;
   academicInfo.languages = data.languages.map(mapLanguageItemApiToLanguageItem);
   return academicInfo;
 };

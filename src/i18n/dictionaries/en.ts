@@ -89,6 +89,10 @@ export const en = {
       },
     ],
   },
+  languages: [
+    { name: "Spanish", description: "Native language" },
+    { name: "English", description: "B2 First (Score 177) Cambridge Assessment English" },
+  ],
   skills: {
     categories: [
       { category: "Frontend" },

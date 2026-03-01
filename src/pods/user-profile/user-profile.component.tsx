@@ -5,9 +5,14 @@ import { getAcademic } from "./user-profile.actions";
 import { Tag } from "@/components/tag/tag.component";
 import { RevealMotion } from "@/components/reveal-motion/reveal-motion.component";
 import { PAGE_ANIMATION_DELAYS } from "@/core/animation-delays";
+import { Lang } from "@/i18n/getDictionary";
 
-export const UserProfile = () => {
-  const academic = getAcademic();
+interface UserProfileProps {
+  lang: Lang;
+}
+
+export const UserProfile = ({ lang }: UserProfileProps) => {
+  const academic = getAcademic(lang);
   const delay = PAGE_ANIMATION_DELAYS.userProfile;
 
   return (
@@ -20,7 +25,7 @@ export const UserProfile = () => {
         src={photo2}
         className={styles.avatar}
       />
-      <span>Europe/Spain</span>
+      <span>{academic.region}</span>
       <div className={styles.languagesContainer}>
         {academic.languages.map((language) => (
           <Tag key={language.name} label={language.name} />

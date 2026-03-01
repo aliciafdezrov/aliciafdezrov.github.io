@@ -1,17 +1,17 @@
 export interface LanguageApiItem {
   name: string;
-  description: string;
 }
 
 export const createInitialLanguageApiItem = (): LanguageApiItem => ({
   name: "",
-  description: "",
 });
 
 export interface AcademicApiInfo {
+  region: string;
   languages: Array<LanguageApiItem>;
 }
 
 export const createInitialAcademicApiInfo = (): AcademicApiInfo => ({
+  region: "",
   languages: [],
 });
